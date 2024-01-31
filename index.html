@@ -13,67 +13,65 @@
   <body>
     <header class="page-header" data-test="header">
       <a class="header-logo" href="#">
-        <img src="#" alt="логотип сайта">
+        <img src="#" alt="Логотип города Седона">
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">о седодне</a>
+            <a class="navigation-link" href="#">О Седодне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">гостинницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="menu-list">
           <li class="menu-item">
             <a class="menu-link" href="#">
-              <span>поиск</span>
+              <span class="visually-hidden">поиск</span>
             </a>
           </li>
           <li class="menu-item">
             <a class="menu-link" href="#">
-              <span>избранное</span>
+              <span class="visually-hidden">избранное</span>
               <span class="counter-favourites">12</span>
             </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">хочу сюда</a>
-          </li>
         </ul>
+        <a class="menu-link" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <main class="main-index" data-test="main">
       <section class="hero-index" data-test="hero">
         <img src="#" alt="изображение каньена">
-        <h1>Седона — небольшой городок в Аризоне,
-          заслуживающий большего!</h1>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h1>Туры в Седону!</h1>
       </section>
       <section class="advantages-index" data-test="advantages">
-        <h2>advantages</h2>
+        <h2>Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</h2>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <b>Настоящий городок</b>
+            <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img src="#" alt="фото города">
           </li>
           <li class="advantages-item">
-            <b>Небольшая площадь</b>
+            <h3>Небольшая площадь</h3>
             <p> Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantages-item">
-            <b>Красивая дорога</b>
+            <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantages-item">
-            <b>Мало туристов</b>
+            <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item">
-            <b>Там есть мост дьявола</b>
+            <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img src="#" alt="фото каньена">
           </li>
@@ -98,11 +96,17 @@
         </ul>
       </section>
       <section class="search" data-test="search">
-      </section>
-      <section class="subscribe" data-test="subscribe">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#">поиск гостиницы в седоне</a>
+      </section>
+      <section class="subscribe-index" data-test="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail">
+          <input type="submit" value="Подписаться">
+        </form>
       </section>
     </main>
     <footer class="page-footer" data-test="footer">
@@ -118,7 +122,9 @@
         </li>
       </ul>
       <a href="#">+7 (812) 812-12-12</a>
-      <a href="#"></a>
+      <a href="#">
+        <img src="" alt="Логотип HTML Academy.">
+      </a>
     </footer>
   </body>
 
