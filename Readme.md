@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Виталий Еченко](https://up.htmlacademy.ru/htmlcss/39/user/2251273).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
+* Сайт: [Седона](https://echenko.github.io/2251273-sedona-39).
 
 ---
 
