@@ -44,16 +44,18 @@
       </nav>
     </header>
     <main class="main-catalog" data-test="main">
+      <!--  -->
+      <h1 class="">Гостиницы Седоны</h1>
+      <ol class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="#"></a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Гостиницы</a>
+        </li>
+      </ol>
       <section class="catalog-filter" data-test="filter">
-        <h1 class="">Гостиницы Седоны</h1>
-        <ol class="breadcrumbs-list">
-          <li class="breadcrumbs-item">
-            <a href="#"></a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a href="#">Гостиницы</a>
-          </li>
-        </ol>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
         <form class="catalog-form" action="https://echo.htmlacademy.ru/courses" method="get">
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -105,11 +107,16 @@
             <legend>Стоимость, ₽:</legend>
             <ul>
               <li>
-                <label for="7">От
-                  <input type="number" name="min" id="7" value="0">
+                <label for="min-price">
+                  <span>От</span>
+                  <input type="number" name="min-price" id="min-price" value="0">
                 </label>
               </li>
-              <li><label for="8">До<input type="number" name="max" id="8" value="9000"></label></li>
+              <li>
+                <label for="max-price">
+                  <span>До</span>
+                  <input type="number" name="max-price" id="max-price" value="9000"></label>
+              </li>
             </ul>
           </fieldset>
           <input type="submit" value="Применить">
@@ -141,7 +148,9 @@
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
             <p></p>
-            <p></p>
+            <p>Рейтинг:
+              <span>8,5</span>
+            </p>
           </li>
           <li class="catalog-item">
             <img src="#" alt="2">
@@ -151,7 +160,9 @@
             <a href="#">подробнее</a>
             <a href="#">в избранном</a>
             <p></p>
-            <p>Рейтинг: 8,5</p>
+            <p>Рейтинг:
+              <span>8,5</span>
+            </p>
           </li>
           <li class="catalog-item">
             <img src="#" alt="3">
@@ -161,7 +172,9 @@
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
             <p></p>
-            <p>Рейтинг: 9,2</p>
+            <p>Рейтинг:
+              <span>6,9</span>
+            </p>
           </li>
           <li class="catalog-item">
             <img src="#" alt="4">
@@ -171,15 +184,30 @@
             <a href="#">подробнее</a>
             <a href="#">в избранное</a>
             <p></p>
-            <p>Рейтинг: 5,0</p>
+            <p>Рейтинг:
+              <span>5,0</span>
+            </p>
           </li>
         </ul>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-item" href="#">10</a>
+          </li>
         </ul>
       </section>
       <section class="subscribe-catalog" data-test="subscribe">
@@ -194,13 +222,13 @@
     <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
-          <a href="#"></a>
+          <a class="social-link" href="#"></a>
         </li>
         <li class="social-item">
-          <a href="#"></a>
+          <a class="social-link" href="#"></a>
         </li>
         <li class="social-item">
-          <a href="#"></a>
+          <a class="social-link" href="#"></a>
         </li>
       </ul>
       <a href="#">+7 (812) 812-12-12</a>

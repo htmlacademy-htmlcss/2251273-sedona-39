@@ -10,11 +10,3 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.filter-input:checked + span {
-  background: red;
-}
-
-.filter-input[type="radio"]:checked + span {
-  background: greenyellow;
-}
