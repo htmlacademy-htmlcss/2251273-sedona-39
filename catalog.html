@@ -44,7 +44,6 @@
       </nav>
     </header>
     <main class="main-catalog" data-test="main">
-      <!-- почему при переносе заголовка в section он падает на уровень (размер шрифта) файл тест -->
       <h1 class="">Гостиницы Седоны</h1>
       <ol class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -105,19 +104,13 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость, ₽:</legend>
-            <ul>
-              <li>
-                <label for="min-price">
-                  <span>От</span>
-                  <input type="number" name="min-price" id="min-price" value="0">
-                </label>
-              </li>
-              <li>
-                <label for="max-price">
-                  <span>До</span>
-                  <input type="number" name="max-price" id="max-price" value="9000"></label>
-              </li>
-            </ul>
+            <label for="min-price">
+              <span>От</span>
+              <input type="number" name="min-price" id="min-price" value="0">
+            </label>
+            <label for="max-price">
+              <span>До</span>
+              <input type="number" name="max-price" id="max-price" value="9000"></label>
           </fieldset>
           <input type="submit" value="Применить">
           <input type="reset" value="Сбросить">
@@ -125,7 +118,8 @@
       </section>
       <section class="catalog" data-test="catalog">
         <header class="catalog-header">
-          <h2 class="catalog-header-title">Найдено гостиниц:
+          <h2 class="catalog-header-title">
+            <p>Найдено гостиниц:</p>
             <span class="catalog-header-text">38</span>
           </h2>
           <select class="menu-sorting" name="menu-sorting" id="menu-sorting">
@@ -134,9 +128,15 @@
             <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="menu-view-list">
-            <li class="menu-view-item"><a class="menu-view-link" href="#"></a></li>
-            <li class="menu-view-item"><a class="menu-view-link" href="#"></a></li>
-            <li class="menu-view-item"><a class="menu-view-link" href="#"></a></li>
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#"></a>
+            </li>
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#"></a>
+            </li>
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#"></a>
+            </li>
           </ul>
         </header>
         <ul class="catalog-list">
