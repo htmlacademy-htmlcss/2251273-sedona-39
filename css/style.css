@@ -15,75 +15,6 @@
   font-display: swap;
 }
 
-/* header */
-/* .header_1 {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 78px;
-} */
-
-/* .header_2 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: uppercase;
-} */
-
-/* .header_3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-transform: uppercase;
-} */
-
-/* .header_4 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-} */
-
-/* text */
-/* .text_basic {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-  color: rgb(51, 51, 51);
-} */
-
-/* .text_blocks {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-} */
-
-/* buttons */
-/* .button_small {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-} */
-
-/* .button_big {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-} */
-
-/* background color */
-
-/* .background_1 {
-  background: rgba(131, 179, 211, 0.12);
-} */
-
-/* .background_2 {
-  background: rgba(131, 179, 211, 0.2);
-} */
-
-/* .background_3 {
-  background: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
-} */
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -107,4 +38,207 @@ body {
   line-height: 21px;
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
+}
+
+.navigation-link {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.menu-link {
+  text-decoration: none;
+}
+
+.counter-likes {
+  color: rgb(255, 255, 255);
+  background: rgb(125, 181, 79);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: center;
+}
+
+.header-button {
+  color: rgb(255, 255, 255);
+  background: rgb(117, 97, 87);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  /*  */
+  outline: none;
+  border: none;
+}
+
+.hero {
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(125, 225, 255);
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages-desc {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.container-blue {
+  background: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+}
+
+.container-light-gray {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item.container-light-gray > .advantages-text {
+  color: rgb(51, 51, 51);
+}
+
+.container-dark-gray {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item.container-dark-gray > .advantages-text {
+  color: rgb(51, 51, 51);
+}
+
+.advantages-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.infastructure {
+  text-align: center;
+}
+
+.infastructure-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.infastructure-desc {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.infastructure-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.infastructure-text {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.search-index {
+  text-align: center;
+}
+
+.search-index-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-index-desc {
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.search-index-button {
+  background: rgb(117, 97, 87);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  /*  */
+  border: none;
+  outline: none;
+}
+
+
+.subscribe-index {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: url("../images/index/index-subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscribe-index-heading {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscribe-index-desc {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.subscribe-index-button {
+  background: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+}
+
+.phone-number {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
 }
