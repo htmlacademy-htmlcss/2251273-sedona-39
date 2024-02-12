@@ -28,6 +28,73 @@
   overflow: hidden;
 }
 
+/* buttons */
+.button {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  /*  */
+  border: none;
+  outline: none;
+}
+
+.button-small {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button-big {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-basic {
+  background-color: rgb(117, 97, 87);
+}
+
+.button-second {
+  background-color: rgb(130, 179, 211);
+}
+
+.button-reset {
+  background-color: transparent;
+}
+
+.button-select {
+  background-color: rgb(125, 181, 79);
+}
+
+/* heading */
+.heading-huge {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.heading-big {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.heading-medium {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.heading-small {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+/* html */
 html {
   box-sizing: border-box;
 }
@@ -40,6 +107,8 @@ body {
   color: rgb(0, 0, 0);
 }
 
+/* index */
+/* navigation */
 .navigation-link {
   text-decoration: none;
   font-size: 20px;
@@ -61,18 +130,7 @@ body {
   text-align: center;
 }
 
-.header-button {
-  color: rgb(255, 255, 255);
-  background: rgb(117, 97, 87);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  text-transform: uppercase;
-  /*  */
-  outline: none;
-  border: none;
-}
-
+/* main */
 .hero {
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
@@ -200,7 +258,6 @@ body {
   outline: none;
 }
 
-
 .subscribe-index {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -229,7 +286,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-
+  /*  */
   border: none;
   outline: none;
 }
@@ -241,4 +298,144 @@ body {
   font-weight: 400;
   line-height: 40px;
   text-transform: uppercase;
+}
+
+/*  */
+.main-header {
+  background-image: url("../images/catalog/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(0, 162, 255);
+  color: rgb(255, 255, 255);
+}
+
+.main-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.control-input {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.control-input[type="number"] {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.catalog-filter-button[type="submit"] {
+  background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  /*  */
+  border: none;
+  outline: none;
+}
+
+.catalog-filter-button[type="reset"] {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  /*  */
+  border: none;
+  outline: none;
+}
+
+.catalog-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.select-control {
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+}
+
+.card-item-link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.card-item-title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.card-item-type {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.card-item-price {
+  color: rgb(51, 51, 51);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+
+
+
+
+.heading-huge {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.heading-big {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.heading-medium {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.heading-small {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
 }
