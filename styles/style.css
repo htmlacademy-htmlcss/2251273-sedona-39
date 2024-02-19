@@ -645,6 +645,8 @@ body {
 
 .card-item-link-image {
   grid-column: span 2;
+  text-decoration: none;
+  pointer-events: none;
 }
 
 .card-item-image {
