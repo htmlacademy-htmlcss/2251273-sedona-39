@@ -7,7 +7,7 @@
     <meta name="description" content="Туры в Седону">
     <meta name="keywords" content="отдых в Седоне, снять гостиницу в Седоне">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
 
   <body>
@@ -71,11 +71,21 @@
     </header>
 
     <main class="main-catalog" data-test="main">
-      <div class="main-header">
-        <h1 class="main-header-title">Гостиницы Седоны</h1>
+      <div class="main-catalog-wrapper">
+        <h1 class="main-catalog-heading">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="#">
+              <svg width="12.000000" height="12.000000" viewBox="0 0 12 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <desc>
+                  Created with Pixso.
+                </desc>
+                <defs />
+                <path id="Vector"
+                  d="M0 5.80005L6 0L12 5.80005L12 12L0 12L0 5.80005ZM1 6.19995L1 11L11 11L11 6.19995L6 1.3999L1 6.19995ZM5 10L4 10L4 6.5L8 6.5L8 10L7 10L7 7.5L5 7.5L5 10Z"
+                  fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd" />
+              </svg>
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
@@ -145,44 +155,81 @@
               <button type="button">Минимальная цена</button>
               <button type="button">Максимальная цена</button>
             </fieldset>
-            <button class="button button-small button-second" type="submit">Применить</button>
-            <button class="button button-small button-reset" type="reset">Сбросить</button>
+            <div>
+              <button class="catalog-filter-button" type="submit">Применить</button>
+              <button class="catalog-filter-button" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
-      <section class="catalog" data-test="catalog">
+      <section class="catalog-cards" data-test="catalog">
         <h2 class="visually-hidden">Самые крутые гостинницы!</h2>
-        <p class="catalog-title">Найдено гостиниц:
-          <span>38</span>
-        </p>
-        <select class="select-control" name="select-control">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" selected>Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <ul class="menu-view-list">
-          <li class="menu-view-item">
-            <a class="menu-view-link" href="#">плитка</a>
-          </li>
-          <li class="menu-view-item">
-            <a class="menu-view-link" href="#">карточки</a>
-          </li>
-          <li class="menu-view-item">
-            <a class="menu-view-link" href="#">список</a>
-          </li>
-        </ul>
+        <div class="catalog-cards-header">
+          <p class="catalog-cards-heading">Найдено гостиниц:
+            <span>38</span>
+          </p>
+          <select class="select-control" name="select-control">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap" selected>Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <ul class="menu-view-list">
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#">
+                <svg width="16.000000" height="14.000000" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector"
+                    d="M0 0L4 0L4 6L0 6L0 0ZM10 0L6 0L6 6L10 6L10 0ZM12 0L16 0L16 6L12 6L12 0ZM0 8L4 8L4 14L0 14L0 8ZM6 8L10 8L10 14L6 14L6 8ZM16 8L12 8L12 14L16 14L16 8Z"
+                    fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#">
+                <svg width="16.000000" height="14.000000" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector" d="M0 0L16 0L16 10L0 10L0 0ZM14 8L14 2L2 2L2 8L14 8ZM0 12L16 12L16 14L0 14L0 12Z"
+                    fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+
+              </a>
+            </li>
+            <li class="menu-view-item">
+              <a class="menu-view-link" href="#">
+                <svg width="16.000000" height="14.000000" viewBox="0 0 16 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector"
+                    d="M2 0L0 0L0 2L2 2L2 0ZM16 0L4 0L4 2L16 2L16 0ZM2 4L0 4L0 6L2 6L2 4ZM16 4L4 4L4 6L16 6L16 4ZM2 8L0 8L0 10L2 10L2 8ZM16 8L4 8L4 10L16 10L16 8ZM2 12L0 12L0 14L2 14L2 12ZM16 12L4 12L4 14L16 14L16 12Z"
+                    fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="card-list">
           <li class="card-item">
-            <a class="card-item-link" href="#">
+            <a class="card-item-link-image" href="#">
               <img class="card-item-image" src="images/catalog/amara-resort-&-spa.jpg" alt="Фото Amara Resort & Spa">
             </a>
-            <a class="card-item-link" href="#">
-              <h3 class="card-item-title">Amara Resort & Spa</h3>
+            <a class="card-item-link-heading" href="#">
+              <h3 class="card-item-heading">Amara Resort & Spa</h3>
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 4000 ₽</p>
-            <a class="button button-small button-basic" href="#">подробнее</a>
-            <button class="button button-small button-second" type="button">в избранное</button>
+            <a class="card-item-link" href="#">подробнее</a>
+            <button class="card-item-button" type="button">в избранное</button>
             <p class="card-item-star">
               <span>4 звезды</span>
             </p>
@@ -191,17 +238,17 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link" href="#">
+            <a class="card-item-link-image" href="#">
               <img class="card-item-image" src="images/catalog/villas-at-poco-diablo.jpg"
                 alt="Фото Villas at Poco Diablo">
             </a>
-            <a class="card-item-link" href="#">
-              <h3 class="card-item-title">Villas at Poco Diablo</h3>
+            <a class="card-item-link-heading" href="#">
+              <h3 class="card-item-heading">Villas at Poco Diablo</h3>
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 5000 ₽</p>
-            <a class="button button-small button-basic" href="#">подробнее</a>
-            <button class="button button-small button-select" type="button">в избранном</button>
+            <a class="card-item-link" href="#">подробнее</a>
+            <button class="card-item-button" type="button">в избранном</button>
             <p class="card-item-star">
               <span>4 звезды</span>
             </p>
@@ -210,16 +257,16 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link" href="#">
+            <a class="card-item-link-image" href="#">
               <img class="card-item-image" src="images/catalog/desert-quail-inn.jpg" alt="Фото Desert Quail Inn">
             </a>
-            <a class="card-item-link" href="#">
-              <h3 class="card-item-title">Desert Quail Inn</h3>
+            <a class="card-item-link-heading" href="#">
+              <h3 class="card-item-heading">Desert Quail Inn</h3>
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 2500 ₽</p>
-            <a class="button button-small button-basic" href="#">подробнее</a>
-            <button class="button button-small button-second" type="button">в избранное</button>
+            <a class="card-item-link" href="#">подробнее</a>
+            <button class="card-item-button" type="button">в избранное</button>
             <p class="card-item-star">
               <span>3 звезды</span>
             </p>
@@ -228,16 +275,16 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link" href="#">
+            <a class="card-item-link-image" href="#">
               <img class="card-item-image" src="images/catalog/greenTree-inn.jpg" alt="Фото GreenTree Inn">
             </a>
-            <a class="card-item-link" href="#">
-              <h3 class="card-item-title">GreenTree Inn</h3>
+            <a class="card-item-link-heading" href="#">
+              <h3 class="card-item-heading">GreenTree Inn</h3>
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 1500 ₽</p>
-            <a class="button button-small button-basic" href="#">подробнее</a>
-            <button class="button button-small button-second" type="button">в избранное</button>
+            <a class="card-item-link" href="#">подробнее</a>
+            <button class="card-item-button" type="button">в избранное</button>
             <p class="card-item-star">
               <span>2 звезды</span>
             </p>
@@ -268,11 +315,11 @@
         </ol>
       </section>
       <section class="subscribe-catalog" data-test="subscribe">
-        <h2 class="subscribe-catalog-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-catalog-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <input type="email" name="email" id="email" placeholder="Ваш e-mail">
-          <button class="button button-small button-second" type="submit">Подписаться</button>
+        <h2 class="subscribe-catalog-heading">Подпишитесь на рассылку</h2>
+        <p class="subscribe-catalog-desc">Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+        <form class="subscribe-catalog-form" action="https://echo.htmlacademy.ru/courses" method="post">
+          <input class="subscribe-catalog-input" type="email" name="email" id="email" placeholder="Ваш e-mail" size="43">
+          <button class="subscribe-catalog-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
@@ -280,36 +327,45 @@
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <svg width="24.000488" height="14.000000" viewBox="0 0 24.0005 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="24.000488" height="14.000000" viewBox="0 0 24.0005 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
-                  Created with Pixso.
+                Created with Pixso.
               </desc>
-              <defs/>
-              <path id="Vector" d="M23.45 0.947998C23.616 0.4021 23.45 0 22.655 0L20.03 0C19.3621 0 19.054 0.346924 18.887 0.72998C18.887 0.72998 17.552 3.92603 15.661 6.00195C15.049 6.604 14.771 6.79492 14.437 6.79492C14.27 6.79492 14.019 6.604 14.019 6.05688L14.019 0.947998C14.019 0.291992 13.835 0 13.2791 0L9.151 0C8.73401 0 8.48303 0.303955 8.48303 0.593018C8.48303 1.21411 9.42896 1.35791 9.526 3.10596L9.526 6.90405C9.526 7.73706 9.37305 7.88794 9.03894 7.88794C8.14905 7.88794 5.98401 4.677 4.69897 1.00293C4.44995 0.288086 4.198 0 3.52698 0L0.900024 0C0.150024 0 0 0.346924 0 0.72998C0 1.41211 0.890015 4.80005 4.14502 9.28101C6.31494 12.3411 9.37 14 12.153 14C13.822 14 14.028 13.6321 14.028 12.9971L14.028 10.6841C14.028 9.94702 14.186 9.80005 14.715 9.80005C15.105 9.80005 15.772 9.99194 17.33 11.467C19.11 13.2161 19.403 14 20.405 14L23.03 14C23.78 14 24.156 13.6321 23.9399 12.9041C23.702 12.1799 22.8521 11.1289 21.725 9.88208C21.113 9.17212 20.1949 8.40698 19.916 8.02393C19.527 7.53296 19.6381 7.31396 19.916 6.87695C19.916 6.87695 23.116 2.45093 23.449 0.947998L23.45 0.947998Z" fill="#83B3D3" fill-opacity="1.000000" fill-rule="evenodd"/>
+              <defs />
+              <path id="Vector"
+                d="M23.45 0.947998C23.616 0.4021 23.45 0 22.655 0L20.03 0C19.3621 0 19.054 0.346924 18.887 0.72998C18.887 0.72998 17.552 3.92603 15.661 6.00195C15.049 6.604 14.771 6.79492 14.437 6.79492C14.27 6.79492 14.019 6.604 14.019 6.05688L14.019 0.947998C14.019 0.291992 13.835 0 13.2791 0L9.151 0C8.73401 0 8.48303 0.303955 8.48303 0.593018C8.48303 1.21411 9.42896 1.35791 9.526 3.10596L9.526 6.90405C9.526 7.73706 9.37305 7.88794 9.03894 7.88794C8.14905 7.88794 5.98401 4.677 4.69897 1.00293C4.44995 0.288086 4.198 0 3.52698 0L0.900024 0C0.150024 0 0 0.346924 0 0.72998C0 1.41211 0.890015 4.80005 4.14502 9.28101C6.31494 12.3411 9.37 14 12.153 14C13.822 14 14.028 13.6321 14.028 12.9971L14.028 10.6841C14.028 9.94702 14.186 9.80005 14.715 9.80005C15.105 9.80005 15.772 9.99194 17.33 11.467C19.11 13.2161 19.403 14 20.405 14L23.03 14C23.78 14 24.156 13.6321 23.9399 12.9041C23.702 12.1799 22.8521 11.1289 21.725 9.88208C21.113 9.17212 20.1949 8.40698 19.916 8.02393C19.527 7.53296 19.6381 7.31396 19.916 6.87695C19.916 6.87695 23.116 2.45093 23.449 0.947998L23.45 0.947998Z"
+                fill="#83B3D3" fill-opacity="1.000000" fill-rule="evenodd" />
             </svg>
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <svg width="18.000000" height="15.095947" viewBox="0 0 18 15.0959" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="18.000000" height="15.095947" viewBox="0 0 18 15.0959" fill="none"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
-                  Created with Pixso.
+                Created with Pixso.
               </desc>
-              <defs/>
-              <path id="Vector" d="M16.785 0.0993652L0.840454 6.2478C-0.247681 6.68481 -0.241333 7.29175 0.640869 7.5625L4.7345 8.8396L14.2058 2.86377C14.6537 2.59131 15.0629 2.73779 14.7266 3.03638L7.05286 9.96191L7.05103 9.96191L7.05286 9.96265L6.77051 14.1824C7.18408 14.1824 7.3667 13.9924 7.59875 13.7686L9.58704 11.8352L13.7229 14.8899C14.4855 15.3101 15.0332 15.0942 15.2229 14.1841L17.938 1.38892C18.2158 0.274658 17.5126 -0.22998 16.785 0.0993652Z" fill="#83B3D3" fill-opacity="1.000000" fill-rule="nonzero"/>
+              <defs />
+              <path id="Vector"
+                d="M16.785 0.0993652L0.840454 6.2478C-0.247681 6.68481 -0.241333 7.29175 0.640869 7.5625L4.7345 8.8396L14.2058 2.86377C14.6537 2.59131 15.0629 2.73779 14.7266 3.03638L7.05286 9.96191L7.05103 9.96191L7.05286 9.96265L6.77051 14.1824C7.18408 14.1824 7.3667 13.9924 7.59875 13.7686L9.58704 11.8352L13.7229 14.8899C14.4855 15.3101 15.0332 15.0942 15.2229 14.1841L17.938 1.38892C18.2158 0.274658 17.5126 -0.22998 16.785 0.0993652Z"
+                fill="#83B3D3" fill-opacity="1.000000" fill-rule="nonzero" />
             </svg>
             <span class="visually-hidden">Telegram</span>
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <svg width="22.000000" height="17.000000" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="22.000000" height="17.000000" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
-                  Created with Pixso.
+                Created with Pixso.
               </desc>
-              <defs/>
-              <path id="Vector" d="M18.6069 0L3.17407 0C1.31348 0 0 1.59375 0 3.3999L0 13.4937C0 15.4062 1.31348 17 3.17407 17L18.8259 17C20.4677 17 22 15.4062 22 13.6001L22 3.3999C21.7811 1.59375 20.4677 0 18.6069 0ZM7.66174 12.5376L7.66174 4.4624L14.995 8.5L7.66174 12.5376Z" fill="#83B3D3" fill-opacity="1.000000" fill-rule="nonzero"/>
+              <defs />
+              <path id="Vector"
+                d="M18.6069 0L3.17407 0C1.31348 0 0 1.59375 0 3.3999L0 13.4937C0 15.4062 1.31348 17 3.17407 17L18.8259 17C20.4677 17 22 15.4062 22 13.6001L22 3.3999C21.7811 1.59375 20.4677 0 18.6069 0ZM7.66174 12.5376L7.66174 4.4624L14.995 8.5L7.66174 12.5376Z"
+                fill="#83B3D3" fill-opacity="1.000000" fill-rule="nonzero" />
             </svg>
             <span class="visually-hidden">YouTube</span>
           </a>
@@ -317,12 +373,15 @@
       </ul>
       <a class="phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/">
-        <svg width="114.899902" height="32.899902" viewBox="0 0 114.9 32.8999" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <svg width="114.899902" height="32.899902" viewBox="0 0 114.9 32.8999" fill="none"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <desc>
-              Created with Pixso.
+            Created with Pixso.
           </desc>
-          <defs/>
-          <path id="HTML Academy" d="M11.6001 4.5C10 4.5 8.80005 5.19995 8 6.19995L7.8999 6.19995L7.8999 0L5.8999 0L5.8999 15.5L7.8999 15.5L7.8999 10.2C7.8999 8.1001 9.19995 6.6001 11.2 6.6001C13 6.6001 14.1001 8 14.1001 9.80005L14.1001 15.5L16.1001 15.5L16.1001 9.3999C16.1025 9.32446 16.1038 9.24951 16.1038 9.17529C16.1038 6.30542 14.2319 4.5 11.6001 4.5ZM47.8 12.7C47.8 14.3999 48.8 15.3999 50.6001 15.3999L52.6001 15.3999L52.6001 13.3999L50.8999 13.3999C50.2 13.3999 49.8 13 49.8 12.3L49.8 0L47.8 0L47.8 12.7ZM26.6001 4.80005L21.8 4.80005L21.8 1.1001L19.8 1.1001L19.8 4.8999L17.8999 4.8999L17.8999 6.8999L19.8 6.8999L19.8 12.8999C19.8 14.6001 20.8 15.6001 22.5 15.6001L26.6001 15.6001L26.6001 13.6001L22.8999 13.6001C22.2 13.6001 21.8 13.2 21.8 12.5L21.8 6.80005L26.6001 6.80005L26.6001 4.80005ZM41.1001 4.6001C39.5 4.6001 38.2 5.3999 37.6001 6.69995L37.5 6.69995C36.8999 5.5 35.7 4.6001 34.1001 4.6001C32.7 4.6001 31.6001 5.3999 31 6.3999L30.8999 6.3999L30.8999 4.80005L29 4.80005L29 15.3999L31 15.3999L31 10C31 8 32 6.5 33.6001 6.5C35.1001 6.5 36 7.5 36 9.1001L36 15.3999L38 15.3999L38 9.80005C38 7.3999 39.3999 6.5 40.6001 6.5C42.1001 6.5 43 7.5 43 9.1001L43 15.3999L45 15.3999L45 8.8999C45.0032 8.82153 45.0046 8.74341 45.0046 8.66626C45.0046 6.28857 43.5215 4.6001 41.1001 4.6001ZM0 12.8999L0 15.5L2.5 15.5L2.5 12.8999L0 12.8999ZM68.7 19.8C67.8 18.7 66.5 17.8999 64.8 17.8999C61.7 17.8999 59.3999 20.2 59.3999 23.5C59.3999 26.8 61.6001 29.1001 64.8 29.1001C66.5 29.1001 67.8 28.3 68.6001 27.3L68.7 27.3L68.7 28.8L70.7 28.8L70.7 13.3999L68.7 13.3999L68.7 19.8ZM28.8999 19.7C28 18.6001 26.7 17.8999 25 17.8999C21.8999 17.8999 19.6001 20.2 19.6001 23.5C19.6001 26.8 21.8999 29.1001 25 29.1001C26.8 29.1001 28 28.3 28.8 27.2L28.8999 27.2L28.8999 28.8L30.8999 28.8L30.8999 18.2L28.8999 18.2L28.8999 19.7ZM44.2 22C43.7 19.6001 41.6001 17.8999 38.8 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.5C33.2 26.6001 35.3999 29.1001 38.8 29.1001C41.6001 29.1001 43.7 27.3 44.2 24.8999L42.1001 24.8999C41.7 26.2 40.3999 27.2 38.8 27.2C36.6001 27.2 35.2 25.6001 35.2 23.6001C35.2 21.6001 36.6001 20 38.8 20C40.3999 20 41.6001 21 42.1001 22.2L44.2 22.2L44.2 22ZM55.1001 19.7C54.2 18.6001 52.8999 17.8999 51.2 17.8999C48.1001 17.8999 45.8 20.2 45.8 23.5C45.8 26.8 48.1001 29.1001 51.2 29.1001C53 29.1001 54.2 28.3 55 27.2L55.1001 27.2L55.1001 28.8L57.1001 28.8L57.1001 18.2L55.1001 18.2L55.1001 19.7ZM78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.5C72.8 26.5 74.8999 29.1001 78.3 29.1001C80.8 29.1001 82.8 27.8 83.5 25.5L81.3999 25.5C80.8999 26.5 79.8 27.1001 78.3999 27.1001C76.5 27.1001 75.1001 25.8 75 24.2L83.8 24.2C83.8083 24.0486 83.8125 23.8987 83.8125 23.7505C83.8125 20.3777 81.6528 17.8999 78.3 17.8999ZM98.2 17.8999C96.6001 17.8999 95.3 18.7 94.6001 19.8999L94.5 19.8999C93.8999 18.7 92.7 17.8999 91.1001 17.8999C89.7 17.8999 88.6001 18.6001 88 19.7L88 18.2L86.1001 18.2L86.1001 28.8L88.1001 28.8L88.1001 23.3999C88.1001 21.3999 89.1001 20 90.7 19.8999C92.2 19.8999 93.1001 20.8999 93.1001 22.5L93.1001 28.8L95.1001 28.8L95.1001 23.2C95.1001 20.8 96.5 19.8999 97.7 19.8999C99.2 19.8999 100.1 20.8999 100.1 22.5L100.1 28.8L102.1 28.8L102.1 22.3C102.103 22.2183 102.105 22.1372 102.105 22.0571C102.105 19.5886 100.621 17.8999 98.2 17.8999ZM109.4 27L105.8 18.1001L103.6 18.1001L108.4 29.7C108.1 30.6001 107.7 30.8999 106.7 30.8999L104.2 30.8999L104.2 32.8999L106.7 32.8999C108.5 32.8999 109.5 32.1001 110.2 30.3L114.9 18.1001L112.8 18.1001L109.4 27ZM78.3 19.8C80 19.8 81.3 20.8 81.6001 22.3999L75.1001 22.3999C75.3999 20.8999 76.6001 19.8 78.3 19.8ZM25.3 27.1001C23.1001 27.1001 21.7 25.5 21.7 23.5C21.7 21.5 23.1001 19.8999 25.3 19.8999C27.5 19.8999 28.8999 21.5 28.8999 23.5C28.8999 25.3999 27.5 27.1001 25.3 27.1001ZM51.5 27.1001C49.3 27.1001 47.8999 25.5 47.8999 23.5C47.8999 21.5 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1001 21.5 55.1001 23.5C55.1001 25.3999 53.6001 27.1001 51.5 27.1001ZM65.1001 27.1001C62.8999 27.1001 61.5 25.5 61.5 23.5C61.5 21.5 62.8999 19.8999 65.1001 19.8999C67.3 19.8999 68.7 21.5 68.7 23.5C68.6001 25.5 67.2 27.1001 65.1001 27.1001Z" fill="#000000" fill-opacity="1.000000" fill-rule="evenodd"/>
+          <defs />
+          <path id="HTML Academy"
+            d="M11.6001 4.5C10 4.5 8.80005 5.19995 8 6.19995L7.8999 6.19995L7.8999 0L5.8999 0L5.8999 15.5L7.8999 15.5L7.8999 10.2C7.8999 8.1001 9.19995 6.6001 11.2 6.6001C13 6.6001 14.1001 8 14.1001 9.80005L14.1001 15.5L16.1001 15.5L16.1001 9.3999C16.1025 9.32446 16.1038 9.24951 16.1038 9.17529C16.1038 6.30542 14.2319 4.5 11.6001 4.5ZM47.8 12.7C47.8 14.3999 48.8 15.3999 50.6001 15.3999L52.6001 15.3999L52.6001 13.3999L50.8999 13.3999C50.2 13.3999 49.8 13 49.8 12.3L49.8 0L47.8 0L47.8 12.7ZM26.6001 4.80005L21.8 4.80005L21.8 1.1001L19.8 1.1001L19.8 4.8999L17.8999 4.8999L17.8999 6.8999L19.8 6.8999L19.8 12.8999C19.8 14.6001 20.8 15.6001 22.5 15.6001L26.6001 15.6001L26.6001 13.6001L22.8999 13.6001C22.2 13.6001 21.8 13.2 21.8 12.5L21.8 6.80005L26.6001 6.80005L26.6001 4.80005ZM41.1001 4.6001C39.5 4.6001 38.2 5.3999 37.6001 6.69995L37.5 6.69995C36.8999 5.5 35.7 4.6001 34.1001 4.6001C32.7 4.6001 31.6001 5.3999 31 6.3999L30.8999 6.3999L30.8999 4.80005L29 4.80005L29 15.3999L31 15.3999L31 10C31 8 32 6.5 33.6001 6.5C35.1001 6.5 36 7.5 36 9.1001L36 15.3999L38 15.3999L38 9.80005C38 7.3999 39.3999 6.5 40.6001 6.5C42.1001 6.5 43 7.5 43 9.1001L43 15.3999L45 15.3999L45 8.8999C45.0032 8.82153 45.0046 8.74341 45.0046 8.66626C45.0046 6.28857 43.5215 4.6001 41.1001 4.6001ZM0 12.8999L0 15.5L2.5 15.5L2.5 12.8999L0 12.8999ZM68.7 19.8C67.8 18.7 66.5 17.8999 64.8 17.8999C61.7 17.8999 59.3999 20.2 59.3999 23.5C59.3999 26.8 61.6001 29.1001 64.8 29.1001C66.5 29.1001 67.8 28.3 68.6001 27.3L68.7 27.3L68.7 28.8L70.7 28.8L70.7 13.3999L68.7 13.3999L68.7 19.8ZM28.8999 19.7C28 18.6001 26.7 17.8999 25 17.8999C21.8999 17.8999 19.6001 20.2 19.6001 23.5C19.6001 26.8 21.8999 29.1001 25 29.1001C26.8 29.1001 28 28.3 28.8 27.2L28.8999 27.2L28.8999 28.8L30.8999 28.8L30.8999 18.2L28.8999 18.2L28.8999 19.7ZM44.2 22C43.7 19.6001 41.6001 17.8999 38.8 17.8999C35.3999 17.8999 33.2 20.3999 33.2 23.5C33.2 26.6001 35.3999 29.1001 38.8 29.1001C41.6001 29.1001 43.7 27.3 44.2 24.8999L42.1001 24.8999C41.7 26.2 40.3999 27.2 38.8 27.2C36.6001 27.2 35.2 25.6001 35.2 23.6001C35.2 21.6001 36.6001 20 38.8 20C40.3999 20 41.6001 21 42.1001 22.2L44.2 22.2L44.2 22ZM55.1001 19.7C54.2 18.6001 52.8999 17.8999 51.2 17.8999C48.1001 17.8999 45.8 20.2 45.8 23.5C45.8 26.8 48.1001 29.1001 51.2 29.1001C53 29.1001 54.2 28.3 55 27.2L55.1001 27.2L55.1001 28.8L57.1001 28.8L57.1001 18.2L55.1001 18.2L55.1001 19.7ZM78.3 17.8999C75 17.8999 72.8 20.3999 72.8 23.5C72.8 26.5 74.8999 29.1001 78.3 29.1001C80.8 29.1001 82.8 27.8 83.5 25.5L81.3999 25.5C80.8999 26.5 79.8 27.1001 78.3999 27.1001C76.5 27.1001 75.1001 25.8 75 24.2L83.8 24.2C83.8083 24.0486 83.8125 23.8987 83.8125 23.7505C83.8125 20.3777 81.6528 17.8999 78.3 17.8999ZM98.2 17.8999C96.6001 17.8999 95.3 18.7 94.6001 19.8999L94.5 19.8999C93.8999 18.7 92.7 17.8999 91.1001 17.8999C89.7 17.8999 88.6001 18.6001 88 19.7L88 18.2L86.1001 18.2L86.1001 28.8L88.1001 28.8L88.1001 23.3999C88.1001 21.3999 89.1001 20 90.7 19.8999C92.2 19.8999 93.1001 20.8999 93.1001 22.5L93.1001 28.8L95.1001 28.8L95.1001 23.2C95.1001 20.8 96.5 19.8999 97.7 19.8999C99.2 19.8999 100.1 20.8999 100.1 22.5L100.1 28.8L102.1 28.8L102.1 22.3C102.103 22.2183 102.105 22.1372 102.105 22.0571C102.105 19.5886 100.621 17.8999 98.2 17.8999ZM109.4 27L105.8 18.1001L103.6 18.1001L108.4 29.7C108.1 30.6001 107.7 30.8999 106.7 30.8999L104.2 30.8999L104.2 32.8999L106.7 32.8999C108.5 32.8999 109.5 32.1001 110.2 30.3L114.9 18.1001L112.8 18.1001L109.4 27ZM78.3 19.8C80 19.8 81.3 20.8 81.6001 22.3999L75.1001 22.3999C75.3999 20.8999 76.6001 19.8 78.3 19.8ZM25.3 27.1001C23.1001 27.1001 21.7 25.5 21.7 23.5C21.7 21.5 23.1001 19.8999 25.3 19.8999C27.5 19.8999 28.8999 21.5 28.8999 23.5C28.8999 25.3999 27.5 27.1001 25.3 27.1001ZM51.5 27.1001C49.3 27.1001 47.8999 25.5 47.8999 23.5C47.8999 21.5 49.3 19.8999 51.5 19.8999C53.7 19.8999 55.1001 21.5 55.1001 23.5C55.1001 25.3999 53.6001 27.1001 51.5 27.1001ZM65.1001 27.1001C62.8999 27.1001 61.5 25.5 61.5 23.5C61.5 21.5 62.8999 19.8999 65.1001 19.8999C67.3 19.8999 68.7 21.5 68.7 23.5C68.6001 25.5 67.2 27.1001 65.1001 27.1001Z"
+            fill="#000000" fill-opacity="1.000000" fill-rule="evenodd" />
         </svg>
       </a>
     </footer>
