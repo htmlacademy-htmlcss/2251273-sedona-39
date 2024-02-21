@@ -117,7 +117,7 @@ body {
 }
 
 .menu-link {
-  color: rgb(0, 0, 0) ;
+  color: rgb(0, 0, 0);
   width: 44px;
   height: 64px;
   text-decoration: none;
@@ -536,7 +536,20 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+}
+
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs-item:not(:last-child):after {
+  background-image: url("../images/icons/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 29px;
+  height: 10px;
+  content: "";
 }
 
 .breadcrumbs-link {
