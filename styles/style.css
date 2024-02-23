@@ -182,15 +182,9 @@ body {
 
 /* advantages */
 .advantages {
-  /*  */
-}
-
-.advantages-header {
-  margin: 0 0 21px;
-  padding: 69px 274px;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  padding: 69px 0 0;
 }
 
 .advantages-heading {
@@ -199,8 +193,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 25px;
+  padding: 0 290px;
 }
 
 .advantages-desc {
@@ -209,7 +203,8 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  margin: 0;
+  margin: 0 0 90px;
+  padding: 0 274px;
 }
 
 .advantages-list {
@@ -283,13 +278,9 @@ body {
 /* infastructure */
 .infastructure {
   text-align: center;
-}
-
-.infastructure-header {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 64px 347px;
+  padding: 64px 0 0;
 }
 
 .infastructure-heading {
@@ -297,7 +288,8 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 20px;
+  padding: 0 347px;
 }
 
 .infastructure-desc {
@@ -305,7 +297,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0;
+  margin: 0 0 64px;
 }
 
 .infastructure-list {
@@ -369,6 +361,8 @@ body {
 /* search-index */
 .search-index {
   text-align: center;
+  display: flex;
+  flex-direction: column;
   padding: 96px 304px;
 }
 
@@ -401,6 +395,7 @@ body {
   border-radius: 4px;
   border: none;
   outline: none;
+  margin: 0 108px;
 }
 
 /* subscribe-index */
@@ -411,6 +406,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 96px 258px 104px;
+  display: flex;
+  flex-direction: column;
 }
 
 .subscribe-index-heading {
@@ -711,6 +708,7 @@ body {
   width: 292px;
   font-size: 18px;
   border: 2px solid rgb(229, 229, 229);
+  border-radius: 4px;
   appearance: none;
 }
 
@@ -730,6 +728,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(229, 229, 229);
+  border-radius: 4px;
 }
 
 /* card */
@@ -821,6 +820,27 @@ body {
 
 .card-item-star {
   margin: 0;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space no-repeat;
+  background-position: center left;
+  width: 0;
+}
+
+.card-item-star.one-stars {
+  width: 24px;
+}
+
+.card-item-star.two-stars {
+  width: 36px;
+}
+.card-item-star.three-stars {
+  width: 60px;
+}
+.card-item-star.four-stars {
+  width: 78px;
+}
+.card-item-star.five-stars {
+  width: 96px;
 }
 
 .card-item-rating {
