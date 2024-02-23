@@ -827,20 +827,20 @@ body {
 }
 
 .card-item-star.one-stars {
-  width: 24px;
+  width: 18px;
 }
 
 .card-item-star.two-stars {
-  width: 36px;
+  width: 42px;
 }
 .card-item-star.three-stars {
-  width: 60px;
+  width: 66px;
 }
 .card-item-star.four-stars {
-  width: 78px;
+  width: 89px;
 }
 .card-item-star.five-stars {
-  width: 96px;
+  width: 106px;
 }
 
 .card-item-rating {
