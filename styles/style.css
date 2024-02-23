@@ -478,16 +478,17 @@ body {
 }
 
 .social-item {
+/*  */
+}
+
+.social-link {
+  color: rgb(131, 179, 211);
   width: 47px;
   height: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-
-.social-link {
-  color: rgb(131, 179, 211);
 }
 
 .phone-number {
