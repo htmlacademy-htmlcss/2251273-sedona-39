@@ -130,8 +130,7 @@
             <div class="catalog-filter-wrapper">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-                <!--  -->
-                <div class="range-input">
+                <div class="range-inputs">
                   <label class="control" for="min-price">
                     <input class="control-input" type="number" name="min-price" id="min-price" value="0">
                   </label>
@@ -139,12 +138,11 @@
                     <input class="control-input" type="number" name="max-price" id="max-price" value="9000">
                   </label>
                 </div>
-                <!--  -->
-                <div class="range-">
-                  <button type="button">
+                <div class="range-bar">
+                  <button class="range-bar-toggle toggle-min" type="button">
                     <span class="visually-hidden">Минимальная цена</span>
                   </button>
-                  <button type="button">
+                  <button class="range-bar-toggle toggle-max" type="button">
                     <span class="visually-hidden">Максимальная цена</span>
                   </button>
                 </div>
@@ -235,7 +233,7 @@
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 5000 ₽</p>
             <a class="card-item-link" href="#">подробнее</a>
-            <button class="card-item-button" type="button">в избранном</button>
+            <button class="card-item-button card-item-button-selected" type="button">в избранном</button>
             <p class="card-item-star two-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
