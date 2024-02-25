@@ -127,7 +127,7 @@ body {
   align-items: center;
 }
 
-.counter-likes {
+.counter-favorites {
   position: absolute;
   color: rgb(255, 255, 255);
   background: rgb(125, 181, 79);
@@ -156,6 +156,7 @@ body {
   text-transform: uppercase;
   border: none;
   align-self: center;
+  cursor: pointer;
 }
 
 .page-header-button:hover,
@@ -434,6 +435,7 @@ body {
   padding: 8px 50px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
   margin: 0 108px;
 }
 
@@ -500,20 +502,24 @@ body {
   flex-grow: 1;
 }
 
-.subscribe-index-input:A {
-
-  background-color: rgb(242, 242, 242);
-
+.subscribe-index-input:placeholder-shown {
+  /* background-color: rgb(242, 242, 242); */
+  background-color: rgb(0, 242, 242);
 }
 
-.subscribe-index-input::placeholder {
+.subscribe-index-input:not(placeholder-shown) {
+  /* background-color: rgb(242, 242, 242); */
+  background-color: rgb(0, 242, 242);
+}
+
+/* .subscribe-index-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
-}
+} */
 
-.subscribe-index-input:hover,
+/* .subscribe-index-input:hover,
 .subscribe-index-input:focus-visible {
   background-color: rgb(230, 230, 230);
-}
+} */
 
 .subscribe-index-button {
   font-family: "PT Sans";
@@ -526,6 +532,7 @@ body {
   padding: 8px 50px;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 .subscribe-index-button:hover,
