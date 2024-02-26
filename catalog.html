@@ -63,14 +63,14 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
-                <path fill="#FFF" fill-rule="evenodd"
+                <path fill="currentColor" fill-rule="evenodd"
                   d="M0 5.8 6 0l6 5.8V12H0V5.8Zm1 .4V11h10V6.2L6 1.4 1 6.2ZM5 10H4V6.5h4V10H7V7.5H5V10Z" />
               </svg>
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
+            <a href="#" class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
         <section class="catalog-filter" data-test="filter">
@@ -168,7 +168,7 @@
           </select>
           <ul class="menu-view-list">
             <li class="menu-view-item">
-              <a class="menu-view-link view-icon" href="#">
+              <a class="menu-view-link menu-view-link-selected" href="#">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
                   <g clip-path="url(#a)">
@@ -179,7 +179,7 @@
               </a>
             </li>
             <li class="menu-view-item">
-              <a class="menu-view-link view-slideshow" href="#">
+              <a class="menu-view-link" href="#">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
                   <g clip-path="url(#a)">
@@ -189,7 +189,7 @@
               </a>
             </li>
             <li class="menu-view-item">
-              <a class="menu-view-link view-list" href="#">
+              <a class="menu-view-link" href="#">
                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
                   <g clip-path="url(#a)">
@@ -215,7 +215,7 @@
             <p class="card-item-price">От 4000 ₽</p>
             <a class="card-item-link" href="#">подробнее</a>
             <button class="card-item-button" type="button">в избранное</button>
-            <p class="card-item-star one-stars">
+            <p class="card-item-star four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
             <p class="card-item-rating">Рейтинг:
@@ -234,7 +234,7 @@
             <p class="card-item-price">От 5000 ₽</p>
             <a class="card-item-link" href="#">подробнее</a>
             <button class="card-item-button card-item-button-selected" type="button">в избранном</button>
-            <p class="card-item-star two-stars">
+            <p class="card-item-star four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
             <p class="card-item-rating">Рейтинг:
@@ -270,7 +270,7 @@
             <p class="card-item-price">От 1500 ₽</p>
             <a class="card-item-link" href="#">подробнее</a>
             <button class="card-item-button" type="button">в избранное</button>
-            <p class="card-item-star four-stars">
+            <p class="card-item-star two-stars">
               <span class="visually-hidden">2 звезды</span>
             </p>
             <p class="card-item-rating">Рейтинг:
@@ -288,7 +288,7 @@
             <p class="card-item-price">От 1500 ₽</p>
             <a class="card-item-link" href="#">подробнее</a>
             <button class="card-item-button" type="button">в избранное</button>
-            <p class="card-item-star five-stars">
+            <p class="card-item-star two-stars">
               <span class="visually-hidden">2 звезды</span>
             </p>
             <p class="card-item-rating">Рейтинг:
@@ -298,7 +298,7 @@
         </ul>
         <ol class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link active" href="#">1</a>
+            <a class="pagination-link pagination-link-active" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -310,7 +310,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link inactive" href="#">...</a>
+            <a class="pagination-link pagination-link-inactive" >...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
