@@ -509,23 +509,11 @@ body {
 }
 
 .subscribe-index-input:placeholder-shown {
-  /* background-color: rgb(242, 242, 242); */
-  background-color: rgb(0, 242, 242);
 }
 
 .subscribe-index-input:not(placeholder-shown) {
-  /* background-color: rgb(242, 242, 242); */
-  background-color: rgb(0, 242, 242);
+  color: #000000;
 }
-
-/* .subscribe-index-input::placeholder {
-  color: rgba(0, 0, 0, 0.6);
-} */
-
-/* .subscribe-index-input:hover,
-.subscribe-index-input:focus-visible {
-  background-color: rgb(230, 230, 230);
-} */
 
 .subscribe-index-button {
   font-family: "PT Sans";
