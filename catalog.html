@@ -162,46 +162,48 @@
           <p class="catalog-cards-heading">Найдено гостиниц:
             <span>38</span>
           </p>
-          <select class="select-control" name="select-control">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap" selected>Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <ul class="menu-view-list">
-            <li class="menu-view-item">
-              <a class="menu-view-link menu-view-link-selected" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="none" d="M0 0h16v14H0z" />
-                  <g clip-path="url(#a)">
-                    <path d="M0 0h4v6H0V0Zm10 0H6v6h4V0Zm2 0h4v6h-4V0ZM0 8h4v6H0V8Zm6 0h4v6H6V8Zm10 0h-4v6h4V8Z"
-                      fill="#000" fill-rule="evenodd" />
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-view-item">
-              <a class="menu-view-link" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="none" d="M0 0h16v14H0z" />
-                  <g clip-path="url(#a)">
-                    <path d="M0 0h16v10H0V0Zm14 8V2H2v6h12ZM0 12h16v2H0v-2Z" fill="#000" fill-rule="evenodd" />
-                  </g>
-                </svg>
-              </a>
-            </li>
-            <li class="menu-view-item">
-              <a class="menu-view-link" href="#">
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="none" d="M0 0h16v14H0z" />
-                  <g clip-path="url(#a)">
-                    <path
-                      d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"
-                      fill="#000" fill-rule="evenodd" />
-                  </g>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog-cards-menu">
+            <select class="select-control" name="select-control">
+              <option value="popular">Сначала популярные</option>
+              <option value="cheap" selected>Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <ul class="menu-view-list">
+              <li class="menu-view-item">
+                <a class="menu-view-link menu-view-link-selected" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h16v14H0z" />
+                    <g clip-path="url(#a)">
+                      <path d="M0 0h4v6H0V0Zm10 0H6v6h4V0Zm2 0h4v6h-4V0ZM0 8h4v6H0V8Zm6 0h4v6H6V8Zm10 0h-4v6h4V8Z"
+                        fill="#000" fill-rule="evenodd" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-view-item">
+                <a class="menu-view-link" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h16v14H0z" />
+                    <g clip-path="url(#a)">
+                      <path d="M0 0h16v10H0V0Zm14 8V2H2v6h12ZM0 12h16v2H0v-2Z" fill="#000" fill-rule="evenodd" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu-view-item">
+                <a class="menu-view-link" href="#">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" d="M0 0h16v14H0z" />
+                    <g clip-path="url(#a)">
+                      <path
+                        d="M2 0H0v2h2V0Zm14 0H4v2h12V0ZM2 4H0v2h2V4Zm14 0H4v2h12V4ZM2 8H0v2h2V8Zm14 0H4v2h12V8ZM2 12H0v2h2v-2Zm14 0H4v2h12v-2Z"
+                        fill="#000" fill-rule="evenodd" />
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <ul class="card-list">
           <li class="card-item">
@@ -311,7 +313,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-link-inactive" >...</a>
+            <a class="pagination-link pagination-link-inactive">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
