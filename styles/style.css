@@ -224,31 +224,51 @@ body {
 
 .advantages-item {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 
-.advantages-item:has(.advantages-image) {
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+  flex-grow: 1;
+}
+
+.advantages-item-image-normal {
+  display: grid;
+  grid-template-areas:
+  "title image"
+  "text image";
   background: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
 }
 
-.advantages-item-reverse {
-  flex-direction: row-reverse;
+.advantages-item-image-reverse {
+  display: grid;
+  grid-template-areas:
+  "image title"
+  "image text";
+  background: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
 }
 
-.advantages-item:not(:has(.advantages-image)):nth-child(even) {
+.advantages-item:nth-child(even) {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:not(:has(.advantages-image)):nth-child(odd) {
+.advantages-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-item:not(:has(.advantages-image)) .advantages-text {
+.advantages-item .advantages-text {
   color: rgb(51, 51, 51);
 }
 
-.advantages-container {
+/* .advantages-container {
   width: 400px;
   min-height: 385px;
   box-sizing: border-box;
@@ -259,27 +279,22 @@ body {
   justify-content: center;
   flex-grow: 1;
   padding: 85px;
-}
+} */
 
 .advantages-title {
+  grid-area: title;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 29px;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 29px;
-  align-items: center;
-}
-
-.advantages-title::after {
-  content: "";
-  width: 60px;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 0 114px;
+  align-self: flex-end;
+  /* padding: 0; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .advantages-item:has(.advantages-image) .advantages-title::after {
@@ -287,13 +302,16 @@ body {
 }
 
 .advantages-text {
+  grid-area: text;
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  margin: 0;
+  margin: 0 85px;
 }
 
 .advantages-image {
+  grid-area: image;
   display: block;
   object-fit: cover;
 }
