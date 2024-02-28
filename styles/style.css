@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   width: 1200px;
   margin: 0 auto;
   font-size: 18px;
@@ -53,9 +53,8 @@ body {
 /* header */
 .page-header {
   padding: 0 70px;
+  gap: 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 .page-header-logo {
@@ -64,13 +63,13 @@ body {
 }
 
 .navigation {
-  margin: 0 0 0 28px;
   display: flex;
+  gap: 28px;
   flex-grow: 1;
-  justify-content: space-between;
 }
 
 .navigation-list {
+  flex-grow: 1;
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -78,16 +77,12 @@ body {
   flex-wrap: wrap;
 }
 
-.navigation-item {
-  /*  */
-}
-
 .navigation-link {
   text-decoration: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: rgb(0, 0, 0);
   display: block;
   padding: 20px 16px;
   position: relative;
@@ -106,20 +101,16 @@ body {
 .menu-list {
   margin: 0;
   padding: 0;
-  margin-right: 20px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-}
-
-.menu-item {
-  /*  */
+  justify-content: flex-end;
 }
 
 .menu-link {
   color: rgb(0, 0, 0);
-  width: 44px;
-  height: 64px;
+  min-width: 44px;
+  min-height: 64px;
   text-decoration: none;
   position: relative;
   display: flex;
@@ -145,6 +136,7 @@ body {
 }
 
 .page-header-button {
+  min-width: 160px;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   padding: 8px 34px;
   background-color: rgb(117, 97, 87);
@@ -240,12 +232,12 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.advantages-item:has(.advantages-image).reverse {
+.advantages-item-reverse {
   flex-direction: row-reverse;
 }
 
 .advantages-item:not(:has(.advantages-image)):nth-child(even) {
-  background: rgba(131, 179, 211, 0.122);
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item:not(:has(.advantages-image)):nth-child(odd) {
@@ -290,7 +282,7 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.advantages-item:has(img) .advantages-title::after {
+.advantages-item:has(.advantages-image) .advantages-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -305,6 +297,7 @@ body {
   display: block;
   object-fit: cover;
 }
+
 
 /* infastructure */
 .infastructure {
