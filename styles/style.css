@@ -667,25 +667,25 @@ body {
 }
 
 /* catalog-filter-form */
-.catalog-filter-form {
+.filter-form {
   display: flex;
   justify-content: space-between;
 }
 
-.catalog-filter-wrapper {
+.filter-form-wrapper {
   display: flex;
   flex-wrap: wrap;
   column-gap: 70px;
   row-gap: 20px;
 }
 
-.catalog-filter-group {
+.filter-form-group {
   margin: 0;
   padding: 0;
   border: none;
 }
 
-.catalog-filter-title {
+.filter-form-title {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-weight: 700;
@@ -695,7 +695,7 @@ body {
   padding: 0;
 }
 
-.catalog-filter-list {
+.filter-form-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
