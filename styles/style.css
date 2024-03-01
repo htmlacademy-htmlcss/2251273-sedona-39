@@ -206,7 +206,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 25px;
-  padding: 0 290px;
+  padding: 0 286px;
 }
 
 .advantages-desc {
@@ -216,7 +216,7 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0 0 90px;
-  padding: 0 274px;
+  padding: 0 272px;
 }
 
 .advantages-list {
@@ -306,7 +306,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  padding: 30px 85px 102px;
+  padding: 30px 83px 102px;
 }
 
 .advantages-image {
@@ -359,7 +359,7 @@ body {
   box-sizing: border-box;
   width: 400px;
   min-height: 385px;
-  padding: 160px 80px 80px;
+  padding: 160px 85px 80px;
 }
 
 .infastructure-item:nth-child(odd) {
@@ -780,6 +780,8 @@ body {
   padding: 12px 20px;
   border: none;
   outline: none;
+  appearance: none;
+  -moz-appearance:textfield;
 }
 
 .range-price-input::-webkit-inner-spin-button,
@@ -1030,8 +1032,8 @@ body {
 .card-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
+  /* justify-content: flex-start; */
+  align-items: start;
   row-gap: 16px;
   column-gap: 20px;
   padding: 19px;
