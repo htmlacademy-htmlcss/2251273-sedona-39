@@ -225,11 +225,13 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .advantages-item {
   flex-grow: 1;
   text-align: center;
+  border: none;
 }
 
 .advantages-item-image {
@@ -257,10 +259,6 @@ body {
     "text";
 }
 
-.advantages-item-image .advantages-title {
-  color: rgb(255, 255, 255);
-}
-
 .advantages-item-image .advantages-text {
   color: rgb(255, 255, 255);
 }
@@ -285,7 +283,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding: 103px 112px 31px;
+  padding: 103px 114px 30px;
   position: relative;
 }
 
@@ -308,7 +306,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  padding: 31px 85px 102px;
+  padding: 30px 85px 102px;
 }
 
 .advantages-image {
@@ -368,19 +366,19 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.hotel {
+.infastructure-item-hotel {
   background-image: url("../images/icons/hotel.svg");
   background-repeat: no-repeat;
   background-position: center 81px;
 }
 
-.food {
+.infastructure-item-food {
   background-image: url("../images/icons/food.svg");
   background-repeat: no-repeat;
   background-position: center 82px;
 }
 
-.souvenir {
+.infastructure-item-souvenir {
   background-image: url("../images/icons/souvenir.svg");
   background-repeat: no-repeat;
   background-position: center 79px;
@@ -674,15 +672,25 @@ body {
 
 .filter-form {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 70px;
+  grid-template-columns: 220px 220px auto auto;
+  grid-auto-columns: minmax(220px, auto);
+  grid-auto-flow: row dense;
+  row-gap: 30px;
+  grid-auto-rows: auto;
 }
 
 .filter-form-group {
+  grid-auto-flow: column;
   margin: 0;
   padding: 0;
   border: none;
   justify-self: start;
+}
+
+.filter-form-group-price {
+  justify-self: end;
+  grid-column: -3/-2;
+  grid-row: -1/1;
 }
 
 .filter-form-title {
@@ -844,6 +852,9 @@ body {
 
 /* form buttons */
 .filter-form-buttons {
+  justify-self: end;
+  grid-column: -2/-1;
+  grid-row: 1/-1;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -965,7 +976,8 @@ body {
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(0, 0, 0, .3);
+  opacity: .3;
 }
 
 .menu-view-list {
@@ -1091,7 +1103,7 @@ body {
 
 .card-item-link:active {
   background-color: rgb(117, 97, 87);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .card-item-button {
@@ -1121,7 +1133,7 @@ body {
 
 .card-item-button:active {
   background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .card-item-button:disabled {
@@ -1149,11 +1161,11 @@ body {
 }
 
 .card-item-star {
-  margin: 0;
   background-color: rgb(255, 255, 255);
   background-image: url("../images/icons/star.svg");
   background-repeat: space no-repeat;
   background-position: center;
+  margin: 0;
   min-width: 18px;
   min-height: 18px;
 }
