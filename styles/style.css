@@ -46,7 +46,7 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   min-height: 100%;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2);
 }
 
 /* header */
@@ -163,7 +163,7 @@ body {
 
 .header-button:active {
   background-color: rgb(117, 97, 87);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .header-button:disabled {
@@ -264,11 +264,11 @@ body {
 }
 
 .advantages-item-text:nth-child(odd) {
-  background: rgba(131, 179, 211, 0.2);
+  background: rgba(131, 179, 211, .2);
 }
 
 .advantages-item-text:nth-child(even) {
-  background: rgba(131, 179, 211, 0.12);
+  background: rgba(131, 179, 211, .12);
 }
 
 .advantages-title {
@@ -296,7 +296,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   background-color: currentColor;
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .advantages-text {
@@ -363,7 +363,7 @@ body {
 }
 
 .infastructure-item:nth-child(odd) {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, .12);
 }
 
 .infastructure-item-hotel {
@@ -447,7 +447,7 @@ body {
 
 .search-index-button:active {
   background-color: rgb(117, 97, 87);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .search-index-button:disabled {
@@ -558,10 +558,6 @@ body {
   margin: 0;
 }
 
-.social-item {
-  /*  */
-}
-
 .social-link {
   display: flex;
   flex-wrap: wrap;
@@ -578,7 +574,7 @@ body {
 }
 
 .social-link:active {
-  color: rgba(104, 162, 202, 0.3);
+  color: rgba(104, 162, 202, .3);
 }
 
 .phone-number {
@@ -597,7 +593,7 @@ body {
 }
 
 .phone-number:active {
-  color: rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, .3);
 }
 
 .html-academy-logo {
@@ -611,7 +607,7 @@ body {
 }
 
 .html-academy-logo :active {
-  color: rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, .3);
 }
 
 /* catalog */
@@ -663,11 +659,11 @@ body {
 }
 
 .breadcrumbs-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, .6);
 }
 
 .breadcrumbs-link:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .filter-form {
@@ -725,15 +721,15 @@ body {
 }
 
 .filter-form-control:has(.filter-form-input:active) {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .filter-form-control:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 .filter-form-control:active {
-  opacity: 0.3;
+  opacity: .3;
 }
 
 .marker {
@@ -811,7 +807,7 @@ body {
 .range-price-bar {
   width: 287px;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, .3);
   position: relative;
 }
 
@@ -886,7 +882,7 @@ body {
 
 .filter-form-button[type="submit"]:active {
   background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .filter-form-button[type="submit"]:disabled {
@@ -909,7 +905,7 @@ body {
 }
 
 .filter-form-button[type="reset"]:hover {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, .6);
 }
 
 .filter-form-button[type="reset"]:focus-visible {
@@ -918,11 +914,11 @@ body {
 }
 
 .filter-form-button[type="reset"]:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .filter-form-button[type="reset"]:disabled {
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, .1);
 }
 
 /* catalog-cards */
@@ -1154,7 +1150,7 @@ body {
 
 .card-item-button-selected:active {
   background-color: rgb(125, 181, 79);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .card-item-button-selected:disabled {
@@ -1342,7 +1338,7 @@ body {
 
 .subscribe-catalog-buttonactive {
   background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 
 .subscribe-catalog-button:disabled {
@@ -1358,7 +1354,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: rgba(242, 242, 242, .8);
   z-index: 1;
   padding: 64px 70px;
 }
