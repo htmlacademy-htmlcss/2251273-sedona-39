@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <header class="page-header" data-test="header">
       <nav class="navigation">
         <a class="header-logo" href="index.html">
@@ -55,12 +56,15 @@
       </nav>
       <button class="header-button" type="button" aria-label="Поиск гостиниц в Седоне.">Хочу сюда!</button>
     </header>
+
     <main class="main-index" data-test="main">
+
       <section class="hero" data-test="hero">
         <img class="hero-image" src="images/icons/welcome.svg" alt="Добро пожаловать в Седону!" width="458"
           height="352">
         <h1 class="visually-hidden">Шикарные туры в Седону!</h1>
       </section>
+
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны!</h2>
         <p class="advantages-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -90,6 +94,7 @@
           </li>
         </ul>
       </section>
+
       <section class="infastructure">
         <h2 class="visually-hidden">Инфаструктура</h2>
         <p class="infastructure-heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -97,18 +102,30 @@
         <ul class="infastructure-list">
           <li class="infastructure-item infastructure-item-hotel">
             <h3 class="infastructure-title">Жильё</h3>
-            <p class="infastructure-text">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
+            <p class="infastructure-text">
+              Рекомендуем пожить<br>
+              в настоящем мотеле,<br>
+              всё как в кино!
+            </p>
           </li>
           <li class="infastructure-item infastructure-item-food">
             <h3 class="infastructure-title">Еда</h3>
-            <p class="infastructure-text">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+            <p class="infastructure-text">
+              Всегда заказывайте<br>
+              топовый фирменный бургер,<br>
+              вы не разочаруетесь!
+            </p>
           </li>
           <li class="infastructure-item infastructure-item-souvenir">
             <h3 class="infastructure-title">Сувениры</h3>
-            <p class="infastructure-text">Не только китайского,<br> но и настоящего местного производства!</p>
+            <p class="infastructure-text">
+              Не только китайского,<br>
+              но и настоящего местного производства!
+            </p>
           </li>
         </ul>
       </section>
+
       <section class="search-index" data-test="search">
         <h2 class="search-index-heading">Заинтересовались?</h2>
         <p class="search-index-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
@@ -116,6 +133,7 @@
         <button class="search-index-button" type="button" aria-label="Поиск гостиниц в Седоне.">Поиск гостиницы в
           Седоне</button>
       </section>
+
       <section class="subscribe-index" data-test="subscribe">
         <h2 class="subscribe-index-heading">Подпишитесь на рассылку</h2>
         <p class="subscribe-index-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -124,7 +142,9 @@
           <button class="subscribe-index-button" type="submit" aria-label="Подписаться на новости.">Подписаться</button>
         </form>
       </section>
+
     </main>
+
     <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
@@ -203,7 +223,7 @@
       </a>
     </footer>
 
-    <div class="modal-container modal-container-closed">
+    <section class="modal-container modal-container-closed">
       <div class="modal">
         <button class="modal-button-close" type="button">x</button>
         <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
@@ -235,7 +255,8 @@
           <button class="modal-button-submin" type="submit" value="отправить">Найти</button>
         </form>
       </div>
-    </div>
+    </section>
+    <script src="scripts/script.js"></script>
   </body>
 
 </html>
