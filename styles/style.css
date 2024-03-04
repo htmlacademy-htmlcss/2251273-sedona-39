@@ -234,29 +234,36 @@ body {
   border: none;
 }
 
+.advantages-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 85px;
+  justify-content: center;
+}
+
 .advantages-item-image {
-  display: grid;
-  grid-template-areas:
-    "title image"
-    "text image";
+  display: flex;
   background: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
 }
 
 .advantages-item-image-left {
-  display: grid;
-  grid-template-areas:
-    "image title"
-    "image text";
+  flex-direction: row-reverse;
 }
 
 .advantages-item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
   width: 400px;
+  box-sizing: border-box;
   min-height: 385px;
-  display: grid;
-  grid-template-areas:
-    "title"
-    "text";
+  padding: 85px;
 }
 
 .advantages-item-image .advantages-text {
@@ -272,18 +279,11 @@ body {
 }
 
 .advantages-title {
-  grid-area: title;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding: 103px 114px 30px;
+  margin: 0 29px;
   position: relative;
 }
 
@@ -292,7 +292,7 @@ body {
   content: "";
   width: 60px;
   height: 2px;
-  bottom: -1px;
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   background-color: currentColor;
@@ -301,18 +301,13 @@ body {
 
 .advantages-text {
   color: rgb(51, 51, 51);
-  grid-area: text;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   margin: 0;
-  padding: 30px 83px 102px;
 }
 
 .advantages-image {
-  grid-area: image;
-  align-self: stretch;
-  width: 800px;
   background-color: rgb(130, 179, 211);
 }
 
@@ -765,6 +760,32 @@ body {
   margin: 0 0 44px;
 }
 
+.range-price-control {
+  position: relative;
+}
+
+.range-price-control::before {
+  color: rgba(0, 0, 0, .3);
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 24px;
+}
+
+.range-price-control[for="min-price"]::before {
+  content: "от";
+}
+
+.range-price-control[for="max-price"]::before {
+  content: "до";
+}
+
 .range-price-input {
   box-sizing: border-box;
   width: 143px;
@@ -773,11 +794,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  padding: 12px 20px;
+  padding: 12px 41px 12px 12px;
   border: none;
   outline: none;
   appearance: none;
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .range-price-input::-webkit-inner-spin-button,
@@ -1233,17 +1254,13 @@ body {
 
 .pagination-link:active {
   background: rgb(130, 179, 211);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-active {
   color: rgb(0, 0, 0);
   background-color: rgb(242, 242, 242);
   pointer-events: none;
-}
-
-.pagination-link-inactive {
-  background: transparent;
-  color: rgb(0, 0, 0);
 }
 
 .pagination-text {
@@ -1366,13 +1383,58 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
+  padding: 64px 70px;
   background-color: rgb(255, 255, 255);
 }
 
 .modal-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 18px;
+  grid-auto-rows: 48px;
+}
+
+.check-in-date-title {
+  margin: 0;
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+
+.modal-control[for="check-in-date"] {
+  grid-column: 2/-1;
+}
+
+.check-in-date-text {
+  grid-column: 2/-1;
+  margin: 0;
+}
+
+.check-out-date-title {
+  grid-column: 1/2;
+  grid-row: span 2;
+}
+
+.modal-control[for="check-out-date"] {
+  grid-column: 2/-1;
+}
+
+.check-out-date-text {
+  grid-column: 2/-1;
+  margin: 0;
+}
+
+
+modal-control-adults
+.modal-control[for="adults"] {
+  grid-column: 1/span 2;
+}
+
+.modal-control[for="children"] {
+  /* grid-column: 4/span 2; */
+}
+
+.modal-button-submit {
+  /* grid-column: 1/-1; */
 }
 
 .modal-control {
@@ -1383,4 +1445,11 @@ body {
   letter-spacing: 0%;
   text-align: left;
   text-transform: capitalize;
+}
+
+.modal-control-input::before {
+  display: block;
+  content: "000";
+  width: 20px;
+  height: 20px;
 }

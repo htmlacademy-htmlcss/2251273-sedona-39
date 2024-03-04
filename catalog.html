@@ -12,13 +12,16 @@
   </head>
 
   <body>
-
+    <!-- page-header -->
     <header class="page-header" data-test="header">
+      <!-- navigation -->
       <nav class="navigation">
+        <!-- header logo -->
         <a class="header-logo" href="index.html">
           <img class="header-logo-image" src="images/icons/logo.svg" alt="Логотип города Седона" width="140"
             height="70">
         </a>
+        <!-- navigation list -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -30,6 +33,7 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        <!-- menu list -->
         <ul class="menu-list">
           <li class="menu-item">
             <a class="menu-link" href="#">
@@ -54,13 +58,15 @@
           </li>
         </ul>
       </nav>
+      <!-- header button -->
       <button class="header-button" type="button" aria-label="Поиск гостиниц в Седоне.">Хочу сюда!</button>
     </header>
 
     <main class="main-catalog" data-test="main">
-
+      <!-- header catalog -->
       <div class="main-catalog-wrapper">
         <h1 class="main-catalog-heading">Гостиницы Седоны</h1>
+        <!-- breadcrumbs list -->
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="catalog.html">
@@ -76,8 +82,10 @@
             <a href="#" class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ol>
+        <!-- catalog filter -->
         <section class="catalog-filter" data-test="filter">
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <!-- filter form -->
           <form class="filter-form" action="https://echo.htmlacademy.ru/courses" method="get">
             <fieldset class="filter-form-group">
               <legend class="filter-form-title">Инфраструктура:</legend>
@@ -142,8 +150,7 @@
                   <input class="range-price-input" type="number" name="min-price" id="min-price" value="0" min="0">
                 </label>
                 <label class="range-price-control" for="max-price">
-                  <input class="range-price-input" type="number" name="max-price" id="max-price" value="9000"
-                    max="9999">
+                  <input class="range-price-input" type="number" name="max-price" id="max-price" value="9000" max="9999">
                 </label>
               </div>
               <div class="range-price-bar">
@@ -162,9 +169,10 @@
           </form>
         </section>
       </div>
-
+      <!-- section cards -->
       <section class="catalog-cards" data-test="catalog">
         <h2 class="visually-hidden">Самые крутые гостинницы!</h2>
+        <!-- header cards -->
         <div class="catalog-cards-header">
           <p class="catalog-cards-heading">Найдено гостиниц:
             <span>38</span>
@@ -213,6 +221,7 @@
             </li>
           </ul>
         </div>
+        <!-- card list -->
         <ul class="card-list">
           <li class="card-item">
             <a class="card-item-link-image" href="#">
@@ -289,6 +298,7 @@
             </p>
           </li>
         </ul>
+        <!-- pagination list -->
         <ol class="pagination-list">
           <li class="pagination-item">
             <a class="pagination-link pagination-link-active">1</a>
@@ -310,7 +320,7 @@
           </li>
         </ol>
       </section>
-
+      <!-- section subscribe -->
       <section class="subscribe-catalog" data-test="subscribe">
         <h2 class="subscribe-catalog-heading">Подпишитесь на рассылку</h2>
         <p class="subscribe-catalog-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -319,10 +329,10 @@
           <button class="subscribe-catalog-button" type="submit">Подписаться</button>
         </form>
       </section>
-
     </main>
 
     <footer class="page-footer" data-test="footer">
+      <!-- social list -->
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -358,7 +368,9 @@
           </a>
         </li>
       </ul>
+      <!-- phone number -->
       <a class="phone-number" href="tel:+78128121212" aria-label="Телефон 7 812 812 12 12">+7 (812) 812-12-12</a>
+      <!-- html academy logo -->
       <a class="html-academy-logo" href="https://htmlacademy.ru/">
         <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
@@ -399,6 +411,7 @@
         </svg>
       </a>
     </footer>
+    <!-- sctipt js -->
     <script src="scripts/script.js"></script>
   </body>
 

@@ -12,13 +12,16 @@
   </head>
 
   <body>
-
+    <!-- page header -->
     <header class="page-header" data-test="header">
+      <!-- page navigation -->
       <nav class="navigation">
+        <!-- header logo -->
         <a class="header-logo" href="index.html">
           <img class="header-logo-image" src="images/icons/logo.svg" alt="Логотип города Седона" width="140"
             height="70">
         </a>
+        <!-- navigation list -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -30,6 +33,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        <!-- menu list -->
         <ul class="menu-list">
           <li class="menu-item">
             <a class="menu-link" href="#">
@@ -54,26 +58,30 @@
           </li>
         </ul>
       </nav>
+      <!-- header button -->
       <button class="header-button" type="button" aria-label="Поиск гостиниц в Седоне.">Хочу сюда!</button>
     </header>
 
     <main class="main-index" data-test="main">
-
+      <!-- section hero -->
       <section class="hero" data-test="hero">
         <img class="hero-image" src="images/icons/welcome.svg" alt="Добро пожаловать в Седону!" width="458"
           height="352">
         <h1 class="visually-hidden">Шикарные туры в Седону!</h1>
       </section>
-
+      <!-- section advantages -->
       <section class="advantages" data-test="advantages">
         <h2 class="visually-hidden">Преимущества Седоны!</h2>
         <p class="advantages-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages-desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <!-- advantages list -->
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-image advantages-item-image-right">
-            <h3 class="advantages-title">Настоящий городок</h3>
-            <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="advantages-image" src="images/index/photo-city.jpg" alt="фото города">
+            <div class="advantages-item-wrapper">
+              <h3 class="advantages-title">Настоящий городок</h3>
+              <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img class="advantages-image" src="images/index/photo-city.jpg" alt="Фото города" width="800" height="385">
           </li>
           <li class="advantages-item advantages-item-text">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -88,51 +96,45 @@
             <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
           <li class="advantages-item advantages-item-image advantages-item-image-left">
-            <h3 class="advantages-title">Там есть мост дьявола</h3>
-            <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class="advantages-image" src="images/index/photo-canyon.jpg" alt="фото каньена">
+            <div class="advantages-item-wrapper">
+              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img class="advantages-image" src="images/index/photo-canyon.jpg" alt="Фото каньена" width="800"
+              height="385">
           </li>
         </ul>
       </section>
-
+      <!-- section infastructure -->
       <section class="infastructure">
         <h2 class="visually-hidden">Инфаструктура</h2>
         <p class="infastructure-heading">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="infastructure-desc">Опытный персонал и качественное обслуживание!</p>
+        <!-- infastructure list -->
         <ul class="infastructure-list">
           <li class="infastructure-item infastructure-item-hotel">
             <h3 class="infastructure-title">Жильё</h3>
-            <p class="infastructure-text">
-              Рекомендуем пожить<br>
-              в настоящем мотеле,<br>
-              всё как в кино!
-            </p>
+            <p class="infastructure-text">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
           </li>
           <li class="infastructure-item infastructure-item-food">
             <h3 class="infastructure-title">Еда</h3>
-            <p class="infastructure-text">
-              Всегда заказывайте<br>
-              топовый фирменный бургер,<br>
-              вы не разочаруетесь!
-            </p>
+            <p class="infastructure-text">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
           <li class="infastructure-item infastructure-item-souvenir">
             <h3 class="infastructure-title">Сувениры</h3>
-            <p class="infastructure-text">
-              Не только китайского,<br>
-              но и настоящего местного производства!
-            </p>
+            <p class="infastructure-text">Не только китайского,<br>но и настоящего местного<br>производства!</p>
           </li>
         </ul>
       </section>
-
+      <!-- section search -->
       <section class="search-index" data-test="search">
         <h2 class="search-index-heading">Заинтересовались?</h2>
-        <p class="search-index-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
-          Седоне</p>
-        <button class="search-index-button" type="button" aria-label="Поиск гостиниц в Седоне.">Поиск гостиницы в Седоне</button>
+        <p class="search-index-desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
+        <button class="search-index-button" type="button" aria-label="Поиск гостиниц в Седоне.">Поиск гостиницы в
+          Седоне</button>
       </section>
-
+      <!-- section subscribe -->
       <section class="subscribe-index" data-test="subscribe">
         <h2 class="subscribe-index-heading">Подпишитесь на рассылку</h2>
         <p class="subscribe-index-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -141,10 +143,10 @@
           <button class="subscribe-index-button" type="submit" aria-label="Подписаться на новости.">Подписаться</button>
         </form>
       </section>
-
     </main>
 
     <footer class="page-footer" data-test="footer">
+      <!-- social list -->
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
@@ -180,7 +182,9 @@
           </a>
         </li>
       </ul>
+      <!-- phone number -->
       <a class="phone-number" href="tel:+78128121212" aria-label="Телефон 7 812 812 12 12">+7 (812) 812-12-12</a>
+      <!-- html academy logo -->
       <a class="html-academy-logo" href="https://htmlacademy.ru/">
         <svg aria-hidden="true" focusable="false" width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
           xmlns="http://www.w3.org/2000/svg">
@@ -221,40 +225,43 @@
         </svg>
       </a>
     </footer>
-
+    <!-- section modal -->
     <section class="modal-container modal-container-closed">
       <div class="modal">
         <button class="modal-button-close" type="button">x</button>
         <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <div>
-            <label class="modal-control" for="check-in-date">Дата заезда:
-              <input class="modal-control-input" type="date" name="check-in-date" id="check-in-date">
-            </label>
-            <p>Мы не можем отправить вас в прошлое.</p>
-          </div>
-          <div>
-            <label class="modal-control" for="check-out-date">Дата выезда:
-              <input class="modal-control-input" type="date" name="check-out-date" id="check-out-date">
-            </label>
-            <p>На эти даты есть свободные номера. Пока есть.</p>
-          </div>
-          <div>
-            <label class="modal-control" for="adults">Взрослые:
-              <button class="modal-control-button" type="button">-</button>
-              <input class="modal-control-input" type="number" name="adults" id="adults" value="2">
-              <button class="modal-control-button" type="button">+</button>
-            </label>
-            <label class="modal-control" for="children">Дети:
-              <button class="modal-control-button" type="button">-</button>
-              <input class="modal-control-input" type="number" name="children" id="children" value="2">
-              <button class="modal-control-button" type="button">+</button>
-            </label>
-          </div>
-          <button class="modal-button-submin" type="submit" value="отправить">Найти</button>
+
+          <p class="check-in-date-title">Дата заезда:</p>
+          <label class="modal-control" for="check-in-date">
+            <input class="modal-control-input" type="date" name="check-in-date" id="check-in-date">
+          </label>
+          <p class="check-in-date-text">Мы не можем отправить вас в прошлое.</p>
+
+          <p class="check-out-date-title">Дата выезда:</p>
+          <label class="modal-control" for="check-out-date">
+            <input class="modal-control-input" type="date" name="check-out-date" id="check-out-date">
+          </label>
+          <p class="check-out-date-text">На эти даты есть свободные номера. Пока есть.</p>
+
+          <p class="adults-title">Взрослые:</p>
+          <label class="modal-control" for="adults">
+            <button class="modal-control-button" type="button">-</button>
+            <input class="modal-control-input" type="number" name="adults" id="adults" value="2">
+            <button class="modal-control-button" type="button">+</button>
+          </label>
+
+          <p class="modal-control-children">Дети:</p>
+          <label class="modal-control" for="children">
+            <button class="modal-control-button" type="button">-</button>
+            <input class="modal-control-input" type="number" name="children" id="children" value="2">
+            <button class="modal-control-button" type="button">+</button>
+          </label>
+          <button class="modal-button-submit" type="submit" value="отправить">Найти</button>
         </form>
       </div>
     </section>
+    <!-- sctipt js -->
     <script src="scripts/script.js"></script>
   </body>
 
