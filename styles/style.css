@@ -1389,18 +1389,17 @@ body {
 
 .modal-form {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 18px;
   grid-auto-rows: 48px;
 }
 
-.check-in-date-title {
-  margin: 0;
+/*  */
+.check-in-date-control {
   grid-column: 1/2;
-  grid-row: span 2;
 }
 
-.modal-control[for="check-in-date"] {
+.check-in-date-input {
   grid-column: 2/-1;
 }
 
@@ -1409,12 +1408,12 @@ body {
   margin: 0;
 }
 
-.check-out-date-title {
+/*  */
+.check-out-date-control {
   grid-column: 1/2;
-  grid-row: span 2;
 }
 
-.modal-control[for="check-out-date"] {
+.check-out-date-input {
   grid-column: 2/-1;
 }
 
@@ -1424,32 +1423,23 @@ body {
 }
 
 
-modal-control-adults
-.modal-control[for="adults"] {
-  grid-column: 1/span 2;
+.modal-control-wrapper {
+  display: grid;
+  grid-template-columns: 41px 31px 41px;
+  background-color: rgb(242, 242, 242);
 }
 
-.modal-control[for="children"] {
-  /* grid-column: 4/span 2; */
+.modal-control-button {
+  border: none;
+  background-color: inherit;
 }
 
-.modal-button-submit {
-  /* grid-column: 1/-1; */
+.modal-control-input {
+  border: none;
+  background-color: inherit;
 }
 
-.modal-control {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-transform: capitalize;
-}
-
-.modal-control-input::before {
-  display: block;
-  content: "000";
-  width: 20px;
-  height: 20px;
+.modal-form-submit {
+  /* margin-top: 48px; */
+  grid-column: 1/-1;
 }
