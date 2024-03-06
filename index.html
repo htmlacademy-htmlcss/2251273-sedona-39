@@ -226,34 +226,60 @@
       </a>
     </footer>
     <!-- section modal  modal-container-closed-->
-    <section class="modal-container">
+    <section class="modal-container modal-container-closed">
       <div class="modal">
-        <button class="modal-button-close" type="button">x</button>
+
+        <button class="modal-button-close" type="button">
+          <svg class="modal-button-close-svg" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 14 14">
+            <path fill="currentColor"
+              d="M14 1.292 12.708 0 7 5.708 1.292 0 0 1.292 5.708 7 0 12.708 1.292 14 7 8.292 12.708 14 14 12.708 8.292 7 14 1.292Z" />
+          </svg>
+        </button>
+
         <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
         <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="get">
 
-          <label class="check-in-date-control" for="check-in-date">Дата заезда:</label>
-          <input class="check-in-date-input" type="date" name="check-in-date" id="check-in-date">
+          <label class="check-in-date-control" for="check-out-date">Дата заезда:</label>
+          <input class="check-in-date-input" type="date" name="check-in-date" id="check-in-date" value="2020-04-27">
           <p class="check-in-date-text">Мы не можем отправить вас в прошлое.</p>
 
           <label class="check-out-date-control" for="check-out-date">Дата выезда:</label>
-          <input class="check-out-date-input" type="date" name="check-out-date" id="check-out-date">
+          <input class="check-out-date-input" type="date" name="check-out-date" id="check-out-date" value="2023-09-01">
           <p class="check-out-date-text">На эти даты есть свободные номера. Пока есть.</p>
 
           <label class="adults-control" for="adults">Взрослые:</label>
-          <div class="modal-control-wrapper">
-            <button class="modal-control-button" type="button">-</button>
+          <div class="adults-control-wrapper">
+            <button class="modal-control-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                <path fill="currentColor" d="M3 9v2h14V9H3Z" />
+              </svg>
+            </button>
             <input class="modal-control-input" type="number" name="adults" id="adults" value="2">
-            <button class="modal-control-button" type="button">+</button>
+            <button class="modal-control-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+              </svg>
+            </button>
           </div>
 
-          <label class="children-control" for="children">Дети:</label>
-          <div class="modal-control-wrapper">
-            <button class="modal-control-button" type="button">-</button>
+          <label class="children-control" for="children">Дети:
+            <button class="children-control-button" type="button">i
+              <span class="children-control-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            </button>
+          </label>
+          <div class="children-control-wrapper">
+            <button class="modal-control-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path fill="currentColor" d="M3 9v2h14V9H3Z" />
+              </svg>
+            </button>
             <input class="modal-control-input" type="number" name="children" id="children" value="2">
-            <button class="modal-control-button" type="button">+</button>
+            <button class="modal-control-button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
+              </svg>
+            </button>
           </div>
-
           <button class="modal-form-submit" type="submit">Найти</button>
         </form>
       </div>
