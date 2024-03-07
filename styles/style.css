@@ -43,8 +43,8 @@ body {
   margin: 0 auto;
   font-size: 18px;
   line-height: 21px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  color: #000000;
   min-height: 100%;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -165,13 +165,13 @@ body {
 }
 
 .header-button:active {
-  background-color: rgb(117, 97, 87);
+  background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .header-button:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* main-index */
@@ -447,13 +447,13 @@ body {
 }
 
 .search-index-button:active {
-  background-color: rgb(117, 97, 87);
-  color: rgba(255, 255, 255, .3);
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-index-button:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* subscribe-index */
@@ -461,7 +461,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   background-image: url("../images/index/index-subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -537,13 +537,13 @@ body {
 }
 
 .subscribe-index-button:active {
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-index-button:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* footer */
@@ -606,12 +606,13 @@ body {
 }
 
 .phone-number:active {
-  color: rgba(117, 97, 87, .3);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .html-academy-logo {
   text-decoration: none;
   color: #000000;
+  background-color: #ffffff;
 }
 
 .html-academy-logo:hover {
@@ -864,7 +865,7 @@ body {
 
 .range-price-toggle {
   position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   width: 20px;
   height: 20px;
   border-radius: 5px;
@@ -876,11 +877,11 @@ body {
 
 .range-price-toggle:hover,
 .range-price-toggle:focus-visible {
-  outline: 3px solid rgb(131, 179, 211);
+  outline: 3px solid #83b3d3;
 }
 
 .range-price-toggle:active {
-  outline: 2px solid rgb(131, 179, 211);
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -904,9 +905,9 @@ body {
 }
 
 .filter-form-button[type="submit"] {
-  background-color: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  background-color: #82b3d3;
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -920,17 +921,17 @@ body {
 
 .filter-form-button[type="submit"]:hover,
 .filter-form-button[type="submit"]:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .filter-form-button[type="submit"]:active {
-  background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, .3);
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .filter-form-button[type="submit"]:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .filter-form-button[type="reset"] {
@@ -1017,7 +1018,7 @@ body {
 }
 
 .select-control:disabled {
-  border: 2px solid rgba(0, 0, 0, .3);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   opacity: 0.3;
 }
 
@@ -1065,7 +1066,7 @@ body {
   margin: 0 0 40px;
   padding: 0 0 40px;
   list-style-type: none;
-  border-bottom: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .card-item {
@@ -1075,7 +1076,7 @@ body {
   row-gap: 16px;
   column-gap: 20px;
   padding: 19px;
-  border: 1px solid rgb(230, 230, 230);
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
@@ -1091,7 +1092,7 @@ body {
 .card-item-link-heading {
   grid-column: span 2;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #000000;
 }
 
 .card-item-link-heading:focus-visible {
@@ -1099,7 +1100,7 @@ body {
 }
 
 .card-item-heading {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -1107,7 +1108,7 @@ body {
 }
 
 .card-item-type {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -1115,7 +1116,7 @@ body {
 }
 
 .card-item-price {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -1125,8 +1126,8 @@ body {
 
 .card-item-link {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(117, 97, 87);
+  color: #ffffff;
+  background-color: #756157;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1138,22 +1139,22 @@ body {
 
 .card-item-link:hover,
 .card-item-link:focus-visible {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
 }
 
 .card-item-link:focus-visible {
-  background-color: rgb(97, 80, 72);
+  background-color: #615048;
 }
 
 .card-item-link:active {
-  background-color: rgb(117, 97, 87);
-  color: rgba(255, 255, 255, .3);
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-item-button {
-  background-color: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  background-color: #82b3d3;
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1167,45 +1168,45 @@ body {
 
 .card-item-button:hover,
 .card-item-button:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .card-item-button:hover,
 .card-item-button:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .card-item-button:active {
-  background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, .3);
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-item-button:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .card-item-button-selected {
-  background-color: rgb(125, 181, 79);
+  background-color: #7db54f;
 }
 
 .card-item-button-selected:hover,
 .card-item-button-selected:focus-visible {
-  background-color: rgb(108, 158, 66);
+  background-color: #6c9e42;
 }
 
 .card-item-button-selected:active {
-  background-color: rgb(125, 181, 79);
-  color: rgba(255, 255, 255, .3);
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card-item-button-selected:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .card-item-star {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   background-image: url("../images/icons/star.svg");
   background-repeat: space no-repeat;
   background-position: center;
@@ -1235,12 +1236,12 @@ body {
 }
 
 .card-item-rating {
-  background: rgb(242, 242, 242);
+  background: #f2f2f2;
   border-radius: 4px;
   padding: 9px 0;
   margin: 0;
   text-align: center;
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1264,8 +1265,8 @@ body {
   min-width: 60px;
   min-height: 60px;
   text-decoration: none;
-  background: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
+  background: #82b3d3;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1274,17 +1275,17 @@ body {
 }
 
 .pagination-link:hover {
-  background: rgb(104, 162, 202);
+  background: #68a2ca;
 }
 
 .pagination-link:active {
-  background: rgb(130, 179, 211);
+  background: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-active {
-  color: rgb(0, 0, 0);
-  background-color: rgb(242, 242, 242);
+  color: #000000;
+  background-color: #f2f2f2;
   pointer-events: none;
 }
 
@@ -1295,8 +1296,8 @@ body {
   min-width: 60px;
   min-height: 60px;
   text-decoration: none;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background: #ffffff;
+  color: #000000;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1320,7 +1321,7 @@ body {
 }
 
 .subscribe-catalog-desc {
-  color: rgb(51, 51, 51);
+  color: #333333;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -1333,12 +1334,12 @@ body {
 }
 
 .subscribe-catalog-input {
-  background: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
+  background: #f2f2f2;
+  color: #000000;
   border: none;
   padding: 12px 20px;
   border-radius: 4px 0 0 4px;
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1346,18 +1347,18 @@ body {
 }
 
 .subscribe-catalog-input:hover {
-  background-color: rgb(230, 230, 230);
+  background-color: #e6e6e6;
 }
 
 .subscribe-catalog-input:focus {
-  background-color: rgb(230, 230, 230);
-  outline: 3px solid rgb(131, 179, 211);
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
 }
 
 .subscribe-catalog-button {
-  color: rgb(255, 255, 255);
-  background-color: rgb(130, 179, 211);
-  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  background-color: #82b3d3;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1370,22 +1371,22 @@ body {
 
 .subscribe-catalog-button:hover,
 .subscribe-catalog-button:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .subscribe-catalog-button:hover,
 .subscribe-catalog-button:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .subscribe-catalog-buttonactive {
-  background-color: rgb(130, 179, 211);
-  color: rgba(255, 255, 255, .3);
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-catalog-button:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 /* modal */
@@ -1408,12 +1409,12 @@ body {
   position: relative;
   margin: auto;
   padding: 64px 70px;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 30px;
 }
 
 .modal-heading {
-  color: rgb(0, 0, 0);
+  color: #000000;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1430,7 +1431,7 @@ body {
   border-radius: 50%;
   padding: 0;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .modal-button-close:hover {
@@ -1576,22 +1577,22 @@ body {
 }
 
 .modal-form-submit:hover {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
 }
 
 .modal-form-submit:focus-visible {
-  background-color: rgb(104, 162, 202);
+  background-color: #68a2ca;
   outline: 3px solid #000000;
 }
 
 .modal-form-submit:active {
-  background-color: rgb(130, 179, 211);
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-form-submit:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .modal-control-button {
