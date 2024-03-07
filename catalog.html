@@ -27,7 +27,7 @@
             <a class="navigation-link" href="index.html" aria-label="Главная страница.">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#" aria-label="Страница О Седоне.">О Седоне</a>
+            <a class="navigation-link" href="#" aria-label="Информация О Седоне.">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="catalog.html" aria-label="Список Гостиниц.">Гостиницы</a>
@@ -69,17 +69,16 @@
         <!-- breadcrumbs list -->
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="catalog.html">
+            <a class="breadcrumbs-link" href="catalog.html" aria-label="Главная страница.">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="12" height="12"
                 fill="none" viewBox="0 0 12 12">
                 <path fill="currentColor" fill-rule="evenodd"
                   d="M0 5.8 6 0l6 5.8V12H0V5.8Zm1 .4V11h10V6.2L6 1.4 1 6.2ZM5 10H4V6.5h4V10H7V7.5H5V10Z" />
               </svg>
-              <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <a href="#" class="breadcrumbs-link">Гостиницы</a>
+            <a href="#" class="breadcrumbs-link" aria-label="Страница гостиниц.">Гостиницы</a>
           </li>
         </ol>
         <!-- catalog filter -->
@@ -147,23 +146,21 @@
               <legend class="filter-form-title">Стоимость, ₽:</legend>
               <div class="range-price">
                 <label class="range-price-control" for="min-price">
-                  <input class="range-price-input" type="number" name="min-price" id="min-price" value="0" min="0">
+                  <input class="range-price-input" type="number" name="min-price" id="min-price" value="0" min="0" aria-label="Укажите минимальную стоимость.">
                 </label>
                 <label class="range-price-control" for="max-price">
-                  <input class="range-price-input" type="number" name="max-price" id="max-price" value="9000" max="9999">
+                  <input class="range-price-input" type="number" name="max-price" id="max-price" value="9000" max="9999" aria-label="Укажите максимальную стоимость.">
                 </label>
               </div>
               <div class="range-price-bar">
-                <button class="range-price-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Минимальная цена</span>
+                <button class="range-price-toggle toggle-min" type="button" aria-label="Измените минимальный ценовой предел.">
                 </button>
-                <button class="range-price-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Максимальная цена</span>
+                <button class="range-price-toggle toggle-max" type="button" aria-label="Измените максимальный ценовой предел.">
                 </button>
               </div>
             </fieldset>
             <div class="filter-form-buttons">
-              <button class="filter-form-button" type="submit">Применить</button>
+              <button class="filter-form-button" type="submit"  >Применить</button>
               <button class="filter-form-button" type="reset">Сбросить</button>
             </div>
           </form>
@@ -177,14 +174,14 @@
           <p class="catalog-cards-heading">Найдено гостиниц:
             <span>38</span>
           </p>
-          <select class="select-control" name="select-control">
+          <select class="select-control" name="select-control" aria-label="Сортировка гостиниц">
             <option value="popular">Сначала популярные</option>
             <option value="cheap" selected>Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
           <ul class="menu-view-list">
             <li class="menu-view-item">
-              <a class="menu-view-link menu-view-link-selected" href="#">
+              <a class="menu-view-link menu-view-link-selected" href="#" aria-label="Отображать карточками гостиниц.">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
@@ -196,7 +193,7 @@
               </a>
             </li>
             <li class="menu-view-item">
-              <a class="menu-view-link" href="#">
+              <a class="menu-view-link" href="#" aria-label="Отображать по одной гостинице.">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
@@ -207,7 +204,7 @@
               </a>
             </li>
             <li class="menu-view-item">
-              <a class="menu-view-link" href="#">
+              <a class="menu-view-link" href="#" aria-label="Отображать списком гостиниц.">
                 <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill="none" d="M0 0h16v14H0z" />
@@ -224,7 +221,7 @@
         <!-- card list -->
         <ul class="card-list">
           <li class="card-item">
-            <a class="card-item-link-image" href="#">
+            <a class="card-item-link-image" href="#" aria-label="Фотография Amara Resort & Spa.">
               <img class="card-item-image" src="images/catalog/hotels/amara-resort-&-spa.jpg"
                 alt="Фото Amara Resort & Spa">
             </a>
@@ -233,8 +230,8 @@
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 4000 ₽</p>
-            <a class="card-item-link" href="#">Подробнее</a>
-            <button class="card-item-button" type="button">В избранное</button>
+            <a class="card-item-link" href="#" aria-label="Подробнее о гостинице Amara Resort & Spa.">Подробнее</a>
+            <button class="card-item-button" type="button" aria-label="Добавить гостиницу Amara Resort & Spa в избранное.">В избранное</button>
             <p class="card-item-star four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -243,7 +240,7 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link-image" href="#">
+            <a class="card-item-link-image" href="#" aria-label="Фотография Villas at Poco Diablo.">
               <img class="card-item-image" src="images/catalog/hotels/villas-at-poco-diablo.jpg"
                 alt="Фото Villas at Poco Diablo">
             </a>
@@ -252,8 +249,8 @@
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 5000 ₽</p>
-            <a class="card-item-link" href="#">Подробнее</a>
-            <button class="card-item-button card-item-button-selected" type="button">В избранном</button>
+            <a class="card-item-link" href="#" aria-label="Подробнее о гостинице Villas at Poco Diablo.">Подробнее</a>
+            <button class="card-item-button card-item-button-selected" type="button" aria-label="Гостиница Villas at Poco Diablo уже в избранном.">В избранном</button>
             <p class="card-item-star four-stars">
               <span class="visually-hidden">4 звезды</span>
             </p>
@@ -262,7 +259,7 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link-image" href="#">
+            <a class="card-item-link-image" href="#" aria-label="Фотография Desert Quail Inn.">
               <img class="card-item-image" src="images/catalog/hotels/desert-quail-inn.jpg" alt="Фото Desert Quail Inn">
             </a>
             <a class="card-item-link-heading" href="#">
@@ -270,8 +267,8 @@
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 2500 ₽</p>
-            <a class="card-item-link" href="#">Подробнее</a>
-            <button class="card-item-button" type="button">В избранное</button>
+            <a class="card-item-link" href="#" aria-label="Подробнее о гостинице Desert Quail Inn.">Подробнее</a>
+            <button class="card-item-button" type="button" aria-label="Добавить гостиницу Desert Quail Inn в избранное.">В избранное</button>
             <p class="card-item-star three-stars">
               <span class="visually-hidden">3 звезды</span>
             </p>
@@ -280,7 +277,7 @@
             </p>
           </li>
           <li class="card-item">
-            <a class="card-item-link-image" href="#">
+            <a class="card-item-link-image" href="#" aria-label="Фотография GreenTree Inn.">
               <img class="card-item-image" src="images/catalog/hotels/greentree-inn.jpg" alt="Фото GreenTree Inn">
             </a>
             <a class="card-item-link-heading" href="#">
@@ -288,8 +285,8 @@
             </a>
             <p class="card-item-type">Гостиница</p>
             <p class="card-item-price">От 1500 ₽</p>
-            <a class="card-item-link" href="#">Подробнее</a>
-            <button class="card-item-button" type="button">В избранное</button>
+            <a class="card-item-link" href="#" aria-label="Подробнее о гостинице GreenTree Inn.">Подробнее</a>
+            <button class="card-item-button" type="button" aria-label="Добавить гостиницу GreenTree Inn в избранное.">В избранное</button>
             <p class="card-item-star two-stars">
               <span class="visually-hidden">2 звезды</span>
             </p>
@@ -299,34 +296,34 @@
           </li>
         </ul>
         <!-- pagination list -->
-        <ol class="pagination-list">
+        <ol class="pagination-list" role="list" aria-label="Список страниц.">
           <li class="pagination-item">
             <a class="pagination-link pagination-link-active">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
+            <a class="pagination-link" href="#" aria-label="Два.">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
+            <a class="pagination-link" href="#" aria-label="Три.">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
+            <a class="pagination-link" href="#" aria-label="Четыре.">4</a>
           </li>
           <li class="pagination-item">
             <p class="pagination-text">...</p>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
+            <a class="pagination-link" href="#" aria-label="Десять.">10</a>
           </li>
         </ol>
       </section>
       <!-- section subscribe -->
-      <section class="subscribe-catalog" data-test="subscribe">
+      <section class="subscribe-catalog" A>
         <h2 class="subscribe-catalog-heading">Подпишитесь на рассылку</h2>
         <p class="subscribe-catalog-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-catalog-form" action="https://echo.htmlacademy.ru/courses" method="post">
           <input class="subscribe-catalog-input" type="email" name="email" id="email" placeholder="Ваш e-mail">
-          <button class="subscribe-catalog-button" type="submit">Подписаться</button>
+        <button class="subscribe-catalog-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
