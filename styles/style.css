@@ -38,6 +38,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: "PT Sans", Helvetica, sans-serif;
   width: 1200px;
   margin: 0 auto;
