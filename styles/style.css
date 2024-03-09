@@ -1382,6 +1382,9 @@ body {
   color: #ffffff;
 }
 
+
+
+
 /* modal */
 .modal-container {
   position: fixed;
@@ -1486,7 +1489,6 @@ body {
   background: #f2f2f2;
 }
 
-/*  */
 .children-control {
   display: flex;
   grid-column: 4/5;
@@ -1686,12 +1688,11 @@ body {
     -webkit-appearance: none;
 }
 
-
 .check-in-date-input::before,
 .check-out-date-input::before {
   position: absolute;
   content: "";
-  /* background-color: #6c9e42; */
+  background-color: inherit;
   background-image: url("../images/icons/calendar.svg");
   width: 20px;
   height: 20px;
