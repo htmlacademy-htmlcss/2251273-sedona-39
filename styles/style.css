@@ -287,7 +287,7 @@ body {
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0 29px;
+  margin: 0;
   position: relative;
 }
 
@@ -911,6 +911,7 @@ body {
   background-color: #82b3d3;
   border: none;
   border-radius: 4px;
+  outline: none;
 }
 
 .filter-form-button[type="submit"]:hover,
@@ -1081,6 +1082,8 @@ body {
 
 .card-item-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .card-item-link-heading {
@@ -1389,10 +1392,10 @@ body {
 .modal-container {
   position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   display: flex;
-  width: 100%;
-  height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 1;
 }
@@ -1489,13 +1492,8 @@ body {
   background: #f2f2f2;
 }
 
-.adults-control-wrapper:has(.modal-control-input:hover),
-.adults-control-wrapper:has(.modal-control-input:focus-visible) {
-  background: #e6e6e6;
-}
-
-.adults-control-wrapper:has(.modal-control-button:hover),
-.adults-control-wrapper:has(.modal-control-button:focus-visible) {
+.adults-control-wrapper:has(:hover),
+.adults-control-wrapper:has(:focus-visible) {
   background: #e6e6e6;
 }
 
@@ -1565,15 +1563,15 @@ body {
   overflow: hidden;
 }
 
-.children-control-wrapper:has(.modal-control-input:hover),
-.children-control-wrapper:has(.modal-control-input:focus-visible) {
+.children-control-wrapper:hover,
+.children-control-wrapper:has(:hover),
+.children-control-wrapper:has(:focus-visible) {
   background: #e6e6e6;
 }
 
-.children-control-wrapper:has(.modal-control-button:hover),
-.children-control-wrapper:has(.modal-control-button:focus-visible) {
-  background: #e6e6e6;
-}
+/* .children-control-wrapper:has(:disabled) {
+  opacity: 0.3;
+} */
 
 .modal-form-submit {
   grid-column: 1/-1;
@@ -1634,6 +1632,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.modal-control-button:disabled {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .modal-control-input {
   border: none;
   padding: 6px;
@@ -1651,6 +1653,10 @@ body {
 .modal-control-input:focus-visible {
   outline: 3px solid #82b3d3;
   outline-offset: -4px;
+}
+
+.modal-control-input:disabled {
+  opacity: 0.3;
 }
 
 .modal-control-input::-webkit-inner-spin-button,
