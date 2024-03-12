@@ -155,6 +155,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .header-button:hover {
@@ -189,7 +190,7 @@ body {
   background-color: #b5c5d5;
   background-image: url("../images/index/divider.png"), url("../images/index/index-background.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom -2px center, center center;
+  background-position: bottom center, center center;
 }
 
 .hero-image {
@@ -437,6 +438,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .search-index-button:hover {
@@ -461,7 +463,7 @@ body {
 .subscribe-index {
   display: flex;
   flex-direction: column;
-  padding: 96px 258px 104px;
+  padding: 96px 258px 105px;
   text-align: center;
   color: #ffffff;
   background-color: #68a3ca;
@@ -527,6 +529,7 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+  outline: none;
 }
 
 .subscribe-index-button:hover {
@@ -572,6 +575,7 @@ body {
   width: 47px;
   height: 40px;
   color: #83b3d3;
+  outline: none;
 }
 
 .social-link:hover {
@@ -580,7 +584,7 @@ body {
 
 .social-link:focus-visible {
   color: #68a2ca;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
 }
 
 .social-link:active {
@@ -595,6 +599,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
 }
 
 .phone-number:hover {
@@ -603,7 +608,7 @@ body {
 
 .phone-number:focus-visible {
   color: #756157;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
 }
 
 .phone-number:active {
@@ -611,9 +616,13 @@ body {
 }
 
 .html-academy-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
+  outline: none;
 }
 
 .html-academy-logo:hover {
@@ -622,7 +631,7 @@ body {
 
 .html-academy-logo:focus-visible {
   color: #756157;
-  outline: 2px solid #000000;
+  /* outline: 2px solid #000000; */
 }
 
 .html-academy-logo :active {
@@ -1080,6 +1089,10 @@ body {
   text-decoration: none;
 }
 
+.card-item-link-image:focus-visible {
+  outline: 2px solid #68a2ca;
+}
+
 .card-item-image {
   display: block;
   width: 100%;
@@ -1132,6 +1145,7 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   border-radius: 4px;
+  outline: none;
 }
 
 .card-item-link:hover,
@@ -1161,6 +1175,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .card-item-button:hover,
@@ -1269,9 +1284,11 @@ body {
   text-transform: uppercase;
   background: #82b3d3;
   border-radius: 4px;
+  outline: none;
 }
 
-.pagination-link:hover {
+.pagination-link:hover,
+.pagination-link:focus-visible {
   background: #68a2ca;
 }
 
@@ -1363,6 +1380,7 @@ body {
   border-radius: 0 4px 4px 0;
   padding: 8px 50px;
   border: none;
+  outline: none;
 }
 
 .subscribe-catalog-button:hover,
