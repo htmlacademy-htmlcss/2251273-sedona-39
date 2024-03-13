@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   width: 1200px;
   min-height: 100%;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   margin: 0 auto;
@@ -145,7 +145,7 @@ body {
   align-self: center;
   min-width: 160px;
   padding: 8px 34px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -427,7 +427,7 @@ body {
 .search-index-button {
   align-self: center;
   padding: 8px 50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -497,7 +497,7 @@ body {
   flex-grow: 1;
   padding: 12px 20px;
   background-color: #f2f2f2;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -519,7 +519,7 @@ body {
 
 .subscribe-index-button {
   padding: 8px 50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   background: #82b3d3;
   font-size: 20px;
   font-weight: 700;
@@ -584,7 +584,6 @@ body {
 
 .social-link:focus-visible {
   color: #68a2ca;
-  /* outline: 2px solid #000000; */
 }
 
 .social-link:active {
@@ -608,7 +607,6 @@ body {
 
 .phone-number:focus-visible {
   color: #756157;
-  /* outline: 2px solid #000000; */
 }
 
 .phone-number:active {
@@ -631,7 +629,6 @@ body {
 
 .html-academy-logo:focus-visible {
   color: #756157;
-  /* outline: 2px solid #000000; */
 }
 
 .html-academy-logo :active {
@@ -799,7 +796,7 @@ body {
   top: 50%;
   width: 18px;
   height: 24px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -911,7 +908,7 @@ body {
 
 .filter-form-button[type="submit"] {
   padding: 8px 50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -940,7 +937,7 @@ body {
 
 .filter-form-button[type="reset"] {
   padding: 8px 50px 8px 50px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1001,7 +998,7 @@ body {
   padding: 12px 20px;
   margin: 0;
   width: 292px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -1164,7 +1161,7 @@ body {
 
 .card-item-button {
   padding: 8px 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -1349,7 +1346,7 @@ body {
 .subscribe-catalog-input {
   flex-grow: 1;
   padding: 12px 20px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -1371,7 +1368,7 @@ body {
 .subscribe-catalog-button {
   color: #ffffff;
   background-color: #82b3d3;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
@@ -1402,9 +1399,6 @@ body {
   background-color: #e5e5e5;
   color: #ffffff;
 }
-
-
-
 
 /* modal */
 .modal-container {
@@ -1550,7 +1544,7 @@ body {
   display: none;
   width: 256px;
   padding: 18px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -1587,15 +1581,11 @@ body {
   background: #e6e6e6;
 }
 
-/* .children-control-wrapper:has(:disabled) {
-  opacity: 0.3;
-} */
-
 .modal-form-submit {
   grid-column: 1/-1;
   align-self: flex-end;
   padding: 18px 77px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1660,7 +1650,7 @@ body {
   appearance: none;
   -moz-appearance: textfield;
   color: #000000;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1685,7 +1675,7 @@ body {
 
 .modal-form label {
   color: #000000;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1710,7 +1700,7 @@ body {
 .check-out-date-input {
   position: relative;
   color: #000000;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
