@@ -138,7 +138,7 @@
         <h2 class="subscribe-index-heading">Подпишитесь на рассылку</h2>
         <p class="subscribe-index-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-index-form" action="https://echo.htmlacademy.ru/courses" method="post">
-          <input class="subscribe-index-input" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail">
+          <input class="subscribe-index-input" type="email" name="user-email" id="user-email" placeholder="Ваш e-mail" required>
           <button class="subscribe-index-button" type="submit" aria-label="Подписаться на новости.">Подписаться</button>
         </form>
       </section>
@@ -238,14 +238,14 @@
         <!-- modal form -->
         <form class="modal-form" action="https://echo.htmlacademy.ru/courses" method="get">
           <!-- check-in-date -->
-          <label class="check-in-date-control" for="check-in-date">Дата заезда:</label>
           <input class="check-in-date-input" type="date" name="check-in-date" id="check-in-date" value="2020-04-27"
             aria-label="Укажите дату заезда.">
+          <label class="check-in-date-control" for="check-in-date">Дата заезда:</label>
           <p class="check-in-date-text">Мы не можем отправить вас в прошлое.</p>
           <!-- check-out-date -->
-          <label class="check-out-date-control" for="check-out-date">Дата выезда:</label>
           <input class="check-out-date-input" type="date" name="check-out-date" id="check-out-date" value="2023-09-01"
             aria-label="Укажите дату выезда.">
+          <label class="check-out-date-control" for="check-out-date">Дата выезда:</label>
           <p class="check-out-date-text">На эти даты есть свободные номера. Пока есть.</p>
           <!-- adults -->
           <label class="adults-control" for="adults">Взрослые:</label>
@@ -258,7 +258,7 @@
             </button>
             <input class="modal-control-input" type="number" name="adults" id="adults" value="2"
               aria-label="Укажите количество взрослых.">
-            <button class="modal-control-button" type="button" aria-label="Увеличить количество взрослых." >
+            <button class="modal-control-button" type="button" aria-label="Увеличить количество взрослых.">
               <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                 fill="currentColor" viewBox="0 0 20 20">
                 <path fill="currentColor" d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
@@ -292,8 +292,6 @@
         </form>
       </div>
     </section>
-    <!-- sctipt js -->
-    <script src="scripts/script.js"></script>
   </body>
 
 </html>
