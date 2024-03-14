@@ -882,6 +882,7 @@ body {
 .range-price-toggle:hover,
 .range-price-toggle:focus-visible {
   outline: 3px solid #83b3d3;
+  cursor: pointer;
 }
 
 .range-price-toggle:active {
@@ -924,6 +925,7 @@ body {
 .filter-form-button[type="submit"]:hover,
 .filter-form-button[type="submit"]:focus-visible {
   background-color: #68a2ca;
+  cursor: pointer;
 }
 
 .filter-form-button[type="submit"]:active {
@@ -952,6 +954,7 @@ body {
 
 .filter-form-button[type="reset"]:hover {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 
 .filter-form-button[type="reset"]:focus-visible {
@@ -1017,6 +1020,7 @@ body {
 .select-control:hover,
 .select-control:focus-visible {
   border: 2px solid #68a2ca;
+  cursor: pointer;
 }
 
 .select-control:disabled {
@@ -1387,6 +1391,7 @@ body {
 .subscribe-catalog-button:hover,
 .subscribe-catalog-button:focus-visible {
   background-color: #68a2ca;
+  cursor: pointer;
 }
 
 .subscribe-catalog-button:hover,
@@ -1451,6 +1456,7 @@ body {
 
 .modal-button-close:hover {
   background-color: #e6e6e6;
+  cursor: pointer;
 }
 
 .modal-button-close:focus-visible {
@@ -1643,6 +1649,7 @@ body {
 
 .modal-control-button:hover {
   color: #000000;
+  cursor: pointer;
 }
 
 .modal-control-button:focus-visible {
@@ -1753,6 +1760,7 @@ body {
 .check-in-date-input:hover,
 .check-out-date-input:hover {
   background: #E6E6E6;
+  cursor: pointer;
 }
 
 .check-in-date-input:focus-visible,
