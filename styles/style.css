@@ -91,6 +91,12 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navigation-link:hover {
+  color: #68A2CA;
+  transition: all 0.5s;
 }
 
 .navigation-link-current::after {
@@ -122,6 +128,12 @@ body {
   text-decoration: none;
   min-width: 44px;
   min-height: 64px;
+  transition: all 0.5s;
+}
+
+.menu-link:hover {
+  color: #68A2CA;
+  transition: all 0.5s;
 }
 
 .counter-favorites {
@@ -760,6 +772,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   outline: 3px solid transparent;
+  flex-shrink: 0;
 }
 
 .filter-form-input[type="radio"] ~ .marker {
