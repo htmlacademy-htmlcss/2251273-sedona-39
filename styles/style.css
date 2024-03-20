@@ -62,6 +62,10 @@ body {
   z-index: 1;
 }
 
+.header-logo:hover {
+  opacity: 0.8;
+}
+
 .header-logo-image {
   display: block;
 }
@@ -91,6 +95,12 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  transition: all 0.5s;
+}
+
+.navigation-link:hover {
+  color: #68A2CA;
+  transition: all 0.5s;
 }
 
 .navigation-link-current::after {
@@ -122,6 +132,12 @@ body {
   text-decoration: none;
   min-width: 44px;
   min-height: 64px;
+  transition: all 0.5s;
+}
+
+.menu-link:hover {
+  color: #68A2CA;
+  transition: all 0.5s;
 }
 
 .counter-favorites {
@@ -226,8 +242,8 @@ body {
 }
 
 .advantages-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -235,9 +251,7 @@ body {
 }
 
 .advantages-item {
-  flex-grow: 1;
   text-align: center;
-  border: none;
 }
 
 .advantages-item-wrapper {
@@ -251,6 +265,7 @@ body {
 }
 
 .advantages-item-image {
+  grid-column: span 3;
   display: flex;
   background-color: #82b3d3;
   color: #ffffff;
@@ -738,6 +753,10 @@ body {
   cursor: pointer;
 }
 
+.filter-form-control:has(:disabled) {
+  opacity: 0.6;
+}
+
 .filter-form-input:focus-visible ~ .marker {
   outline: 3px solid #83b3d3;
 }
@@ -760,6 +779,7 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   outline: 3px solid transparent;
+  flex-shrink: 0;
 }
 
 .filter-form-input[type="radio"] ~ .marker {
