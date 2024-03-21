@@ -659,6 +659,7 @@ body {
   background-image: url("../images/catalog/catalog-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: cover;
 }
 
 .main-catalog-heading {
@@ -1759,9 +1760,9 @@ body {
 .check-out-date-input[type="date"]::-webkit-inner-spin-button,
 .check-in-date-input[type="date"]::-webkit-calendar-picker-indicator,
 .check-out-date-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    appearance: none;
-    -webkit-appearance: none;
+  display: none;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .check-in-date-input::before,
